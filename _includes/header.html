@@ -1,0 +1,10 @@
+<header class="site-header">
+  <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>&nbsp;|
+  {% for my_page in site.pages %}
+    {% unless my_page.exclude_from_nav %}
+      {% if my_page.title %}
+        <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+      {% endif %}
+    {% endunless %}
+  {% endfor %}
+</header>
