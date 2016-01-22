@@ -25,7 +25,7 @@ html {
   font-family: $base-font-family;
   color: $text-color;
   font-size: 24px;
-  font-weight: 100;
+  font-weight: $base-font-weight;
   line-height: 1.5;
   @media (max-width: 900px) {
     font-size: 20px;
@@ -39,6 +39,11 @@ html {
   -o-font-feature-settings: "kern" 1;
   font-feature-settings: "kern" 1;
   font-kerning: normal;
+}
+
+.post-content, .homepage-post {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 /**
@@ -73,6 +78,14 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: .5em;
   margin-bottom: .5rem;
   line-height: 1.1;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+h2.footer-heading {
+  text-transform: none;
+  letter-spacing: normal;
 }
 
 /**
@@ -111,6 +124,10 @@ li {
     > ol {
          margin-bottom: 0;
     }
+}
+
+ul.archive {
+  list-style: none;
 }
 
 /**
@@ -178,6 +195,8 @@ pre {
   left: 20%;
   bottom: 80%;
   color: #fff;
+  text-transform: none;
+  letter-spacing: normal;
   animation-name: title;
   animation-duration: 8s;
 }
