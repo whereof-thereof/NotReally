@@ -24,7 +24,7 @@ ul, ol, dl, figure,
 html {
   font-family: $base-font-family;
   color: $text-color;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: $base-font-weight;
   line-height: 1.5;
   @media (max-width: 900px) {
@@ -41,36 +41,6 @@ html {
   font-kerning: normal;
 }
 
-.post-content, .homepage-post {
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-/**
- * Images
- */
-img {
-    max-width: 100%;
-    vertical-align: middle;
-}
-
-/**
-  * Videos
-  */
-.video-wrapper {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
-}
-.video-wrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
 /**
  * Headings
  */
@@ -83,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: .1em;
 }
 
-h2.footer-heading {
+.site-header h3 {
   text-transform: none;
   letter-spacing: normal;
 }
@@ -92,15 +62,18 @@ h2.footer-heading {
  * Links
  */
 a {
-    color: $brand-color;
+    color: $text-color;
     text-decoration: none;
+    border-bottom: 1px solid;
     &:visited {
-        color: darken($brand-color, 5%);
+        color: darken($text-color, 5%);
     }
     &:hover {
-        color: $text-color;
-        text-decoration: underline;
     }
+}
+
+header a {
+  border-bottom: none;
 }
 
 /**
@@ -117,6 +90,7 @@ blockquote {
  */
 ul, ol {
     margin-left: $spacing-unit;
+    text-align: left;
 }
 
 li {
@@ -126,22 +100,18 @@ li {
     }
 }
 
-ul.archive {
-  list-style: none;
-}
-
 /**
  * Code formatting
  */
 pre,
 code {
-    font-size: 0.85rem;
+    font-size: 1rem;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
     background-color: #eef;
 }
 code {
-    padding: 1px 5px;
+    padding: 1px 3px;
 }
 pre {
     padding: 8px 12px;
@@ -179,37 +149,7 @@ pre {
     }
 }
 
-/**
-  * Hero
-  */
-.hero {
-  width: 100vw;
-  height: 100vh;
-  background: #fff url("/resources/HERO.gif") no-repeat scroll center center;
-  background-size: 100% 100%;
-  overflow: hidden;
-  position: relative;
-}
-.hero h1 {
-  position: absolute;
-  left: 20%;
-  bottom: 80%;
-  color: #fff;
-  text-transform: none;
-  letter-spacing: normal;
-  animation-name: title;
-  animation-duration: 8s;
-}
-.hero p {
-  position: absolute;
-  left: 20%;
-  bottom: 70%;
-  color: #fff;
-}
-@keyframes title {
-  from {bottom: -10%;}
-  to {bottom: 80%;}
-}
+/* Lost & found */
 
 .site-header .site-title {
   font-weight: bold;

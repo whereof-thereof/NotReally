@@ -1,4 +1,13 @@
 <footer class="site-footer">
-  <h2 class="footer-heading">{{ site.title }}</h2>
-  <p><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>&nbsp;|&nbsp;<a href="{{ "/sitemap.xml" | prepend: site.baseurl }}">Sitemap</a></p>
+  <p>{{ site.title }} is a thing. Get in touch via <a href="https://twitter.com/robsafar">Twitter</a> or <a href="https://plus.google.com/+RobSafar">Google+</a>. Find more blog posts on <a href="https://medium.com/@robsafar">Medium</a>.</p>
+  <p><a href="{{ site.baseurl }}/">Home</a>
+  {% for my_page in site.pages %}
+    {% unless my_page.exclude_from_nav %}
+      {% if my_page.title %}
+        |&nbsp;<a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+      {% endif %}
+    {% endunless %}
+  {% endfor %}
+  <br>
+  <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>&nbsp;|&nbsp;<a href="{{ "/sitemap.xml" | prepend: site.baseurl }}">Sitemap</a></p>
 </footer>

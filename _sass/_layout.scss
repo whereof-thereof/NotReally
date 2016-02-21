@@ -3,21 +3,25 @@ body {
   position: relative;
 }
 
-.site-header {
-  margin-bottom: 2em;
-  text-align: center;
+.post-content, .homepage-post {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
-.content {
-  padding: 10px;
+h1, h2, h3, h4, h5, h6, p, ul, ol, pre, blockquote {
+  padding-left: 10px;
+  padding-right: 10px;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.homepage-menu {
-  margin-bottom: 4em;
-  text-align: center;
+/**
+ * Images
+ */
+img {
+    max-width: 100%;
+    vertical-align: middle;
 }
 
 .post-list img {
@@ -30,18 +34,51 @@ body {
   height: auto;
 }
 
-.homepage-post {
-  margin-bottom: 3em;
-  border-bottom: 1px solid $grey-color;
+/**
+  * Videos
+  */
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
-.footer-spacer {
-  height: 7em;
+/**
+  * Lists
+  */
+ul.post-list, ul.archive {
+  list-style: none;
 }
 
+ul.post-list li, ul.archive li {
+  margin-bottom: 0.4em;
+}
+
+ul.archive h3 {
+  margin-top: 1.5em;
+}
+
+/**
+  * Header
+  */
+.site-header {
+  margin-top: 5em;
+  margin-bottom: 5em;
+  text-align: center;
+}
+
+/**
+  * Footer
+  */
 .site-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100vw;
+  margin-top: 5em;
   text-align: center;
 }
