@@ -52,6 +52,16 @@ img {
 }
 
 /**
+  * Blockquotes
+  */
+blockquote {
+  padding-left: 3rem;
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+/**
   * Lists
   */
 ul.post-list, ul.archive {

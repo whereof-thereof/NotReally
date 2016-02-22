@@ -41,6 +41,10 @@ html {
   font-kerning: normal;
 }
 
+strong {
+  font-weight: 900;
+}
+
 /**
  * Headings
  */
@@ -80,9 +84,10 @@ header a {
  * Blockquotes
  */
 blockquote {
-    > :last-child {
-        margin-bottom: 0;
-    }
+  font-style: italic;
+  > em {
+    font-style: normal;
+  }
 }
 
 /**

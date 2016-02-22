@@ -16,14 +16,12 @@ permalink: /archive/
       {% endif %}
     {% endunless %}
     <li>
-      <strong>
       {{ post.date | date:"%d&nbsp;%b" }}&nbsp;
       {% if post.platform %}
         <a href="{{ post.exturl }}">"{{ post.title }}"</a>
       {% else %}
         <a href="{{ post.url }}">"{{ post.title }}"</a>
       {% endif %}
-      </strong>
       {% if post.type %}<span class="grey"> //{{ post.type }}</span>{% endif %}
       {% if post.platform %}<span class="grey">: {{ post.platform }}</span>{% endif %}
       <br>
