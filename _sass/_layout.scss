@@ -9,9 +9,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol, pre, blockquote {
-  padding-left: 10px;
-  padding-right: 10px;
-  max-width: 700px;
+  padding-left: $spacing-unit;
+  padding-right: $spacing-unit;
+  max-width: $max-width;
   margin-left: auto;
   margin-right: auto;
 }
@@ -39,8 +39,8 @@ img {
   */
 .video-wrapper {
 	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
+	padding-bottom: $huge-space;
+	padding-top: $spacing-unit;
 	height: 0;
 }
 .video-wrapper iframe {
@@ -55,7 +55,7 @@ img {
   * Blockquotes
   */
 blockquote {
-  padding-left: 3rem;
+  padding-left: $spacing-unit;
   > :last-child {
     margin-bottom: 0;
   }
@@ -68,20 +68,16 @@ ul.post-list, ul.archive {
   list-style: none;
 }
 
-ul.post-list li, ul.archive li {
-  margin-bottom: 0.4em;
-}
-
 ul.archive h3 {
-  margin-top: 1.5em;
+  margin-top: $spacing-unit;
 }
 
 /**
   * Header
   */
 .site-header {
-  margin-top: 5em;
-  margin-bottom: 5em;
+  margin-top: $huge-space;
+  margin-bottom: $huge-space;
   text-align: center;
 }
 
@@ -89,6 +85,6 @@ ul.archive h3 {
   * Footer
   */
 .site-footer {
-  margin-top: 5em;
+  margin-top: $huge-space;
   text-align: center;
 }

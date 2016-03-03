@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: $spacing-unit;
 }
 
 /**
@@ -24,14 +24,11 @@ ul, ol, dl, figure,
 html {
   font-family: $base-font-family;
   color: $text-color;
-  font-size: 18px;
+  font-size: $base-font-size;
   font-weight: $base-font-weight;
-  line-height: 1.5;
-  @media (max-width: 900px) {
-    font-size: 20px;
-  }
-  @media (max-width: 500px) {
-    font-size: 14px;
+  line-height: $base-line-height;
+  @media (max-width: $max-width) {
+    font-size: $base-font-size * 0.9;
   }
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
@@ -49,9 +46,7 @@ strong {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  margin-top: .5em;
-  margin-bottom: .5rem;
-  line-height: 1.1;
+  line-height: $base-line-height;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: .1em;
@@ -119,7 +114,7 @@ code {
     padding: 1px 3px;
 }
 pre {
-    padding: 8px 12px;
+    padding: $spacing-unit;
     overflow-x: auto;
     > code {
         border: 0;
