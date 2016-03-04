@@ -5,15 +5,15 @@
 
 // Variables
 $base-font-family: 'Lato', sans-serif;
-$base-font-size:   18px;
+$base-font-size:   17px;
 $base-font-weight: 400;
-$base-line-height: 1.5;
+$base-line-height: 1.6;
 
 $small-font-size:  $base-font-size * 0.875;
 
-$spacing-unit:     $base-font-size * $base-line-height - 2;
-$huge-space:       $spacing-unit * 4;
-$max-width:        $spacing-unit * 30;
+$spacing-unit:     30px;
+$huge-space:       $spacing-unit * 3;
+$max-width:        728px;
 
 $text-color:       #333;
 $grey-color:       #9896A4;
