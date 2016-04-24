@@ -3,6 +3,10 @@ body {
   position: relative;
 }
 
+body.indexHTML {
+  font-size: 30px;
+}
+
 .post-content, .homepage-post {
   text-align: justify;
   text-justify: inter-word;
