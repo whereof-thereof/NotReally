@@ -5,6 +5,7 @@
 
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  {% if post.exturl %}<meta name="robots" content="noindex" />{% endif %}
 
   <link rel="icon" href="/resources/icon48.png">
   <link rel="icon" type="image/png" href="/resources/icon192.png" sizes="192x192">
