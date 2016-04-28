@@ -13,7 +13,7 @@ layout: home
   <ul class="post-list">
     {% for post in site.posts limit:10 %}
       <li>
-        <span class="mono">{{ post.date | date:"%d&nbsp;%b" }}</span>&nbsp;
+        <span class="mono">{{ post.date | date:"%d&nbsp;%b&nbsp;'%y" }}</span>&nbsp;
         {% if post.platform %}
           <a href="{{ post.exturl }}">"{{ post.title }}"</a>
         {% else %}
