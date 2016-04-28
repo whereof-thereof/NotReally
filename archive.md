@@ -23,7 +23,7 @@ permalink: /archive/
         <a href="{{ post.url }}">"{{ post.title }}"</a>
       {% endif %}
       {% if post.type %}<span class="grey"> //{{ post.type }}</span>{% endif %}
-      {% if post.platform %}<span class="grey">: {{ post.platform }}</span>{% endif %}
+      {% if post.platform %}<span class="grey">{{ post.platform }}</span>{% endif %}
       <br>
       <em>{{ post.content | strip_html | truncatewords:35 }}</em>
     </li>
