@@ -24,7 +24,8 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, pre, blockquote, dl, fieldset, table {
 }
 
 hr {
-  margin: $spacing-unit 0;
+  width: $max-width;
+  margin: $spacing-unit auto;
 }
 
 /**
