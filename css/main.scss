@@ -4,9 +4,11 @@
 @charset "utf-8";
 
 // Variables
-$base-font-family: 'Lato', sans-serif;
+$base-font-family: 'Fira Sans', sans-serif;
+$mono-font-family: 'Fira Mono', monospace;
 $base-font-size:   17px;
 $base-font-weight: 400;
+$bold-font-weight: 700;
 $base-line-height: 1.6;
 
 $small-font-size:  $base-font-size * 0.875;

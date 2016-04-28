@@ -7,16 +7,16 @@ permalink: /archive/
 <ul class="archive">
   {% for post in site.posts %}
     {% unless post.next %}
-      <h3>{{ post.date | date: '%Y' }}</h3>
+      <h3 class="mono">{{ post.date | date: '%Y' }}</h3>
     {% else %}
       {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
       {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
       {% if year != nyear %}
-        <h3>{{ post.date | date: '%Y' }}</h3>
+        <h3 class="mono">{{ post.date | date: '%Y' }}</h3>
       {% endif %}
     {% endunless %}
     <li>
-      {{ post.date | date:"%d&nbsp;%b" }}&nbsp;
+      <span class="mono">{{ post.date | date:"%d&nbsp;%b" }}</span>&nbsp;
       {% if post.platform %}
         <a href="{{ post.exturl }}">"{{ post.title }}"</a>
       {% else %}

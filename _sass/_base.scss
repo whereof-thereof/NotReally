@@ -50,7 +50,7 @@ html {
 }
 
 strong {
-  font-weight: 900;
+  font-weight: $bold-font-weight;
 }
 
 /**
@@ -86,6 +86,10 @@ h6 {
 .site-header h3 {
   text-transform: none;
   letter-spacing: normal;
+}
+
+.mono {
+  font-family: $mono-font-family;
 }
 
 /**
@@ -136,6 +140,7 @@ li {
  */
 pre,
 code {
+    font-family: $mono-font-family;
     font-size: 1rem;
     text-align: left;
     border: 1px solid $grey-color-light;
