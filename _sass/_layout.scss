@@ -32,9 +32,12 @@ hr::after {
  */
 img {
     max-width: 100%;
+    box-sizing: border-box;
     vertical-align: middle;
     padding: $spacing-unit / 2;
-    box-sizing: border-box;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .post-list img {
