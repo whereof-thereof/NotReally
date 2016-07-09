@@ -25,7 +25,13 @@ permalink: /archive/
       {% if post.type %}<span class="grey"> //{{ post.type }}</span>{% endif %}
       {% if post.platform %}<span class="grey">/{{ post.platform }}</span>{% endif %}
       <br>
-      <em>{{ post.content | strip_html | truncatewords:35 }}</em>
+      <em>
+        {% if post.subtitle %}
+          {{ post.subtitle }}
+        {% else %}
+          {{ post.content | strip_html | truncatewords:35 }}
+        {% endif %}
+      </em>
     </li>
   {% endfor %}
 </ul>

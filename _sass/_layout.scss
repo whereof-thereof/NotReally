@@ -80,6 +80,11 @@ blockquote {
 /**
   * Lists
   */
+
+ul, ol {
+  padding-left: 2 * $spacing-unit;
+}
+
 ul.post-list, ul.archive {
   list-style: none;
 }

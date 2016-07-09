@@ -90,6 +90,7 @@ h6 {
 
 .mono {
   font-family: $mono-font-family;
+  font-size: $mono-font-size;
 }
 
 /**
@@ -115,9 +116,9 @@ header a {
  */
 blockquote {
   font-style: italic;
-  > em {
-    font-style: normal;
-  }
+}
+blockquote em {
+  font-weight: $bold-font-weight;
 }
 
 /**
@@ -141,7 +142,7 @@ li {
 pre,
 code {
     font-family: $mono-font-family;
-    font-size: 1rem;
+    font-size: $mono-font-size;
     text-align: left;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
@@ -159,6 +160,19 @@ pre {
         padding-right: 0;
         padding-left: 0;
     }
+}
+
+/**
+  * Footnotes
+  */
+div.footnotes {
+  font-size: $small-font-size;
+}
+div.footnotes::before {
+  content: "* * *";
+  display: block;
+  font-family: $mono-font-family;
+  text-align: center;
 }
 
 /**
