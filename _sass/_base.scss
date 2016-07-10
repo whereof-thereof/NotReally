@@ -70,6 +70,7 @@ h1 {
 h2 {
   font-size: 1.7em;
   text-align: center;
+  padding-top: 2 * $spacing-unit;
 }
 h4 {
   font-style: italic;
@@ -146,7 +147,7 @@ code {
     text-align: left;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: #eef;
+    background-color: $grey-color-light;
 }
 code {
     padding: 1px 3px;
@@ -167,6 +168,7 @@ pre {
   */
 div.footnotes {
   font-size: $small-font-size;
+  padding-top: 2 * $spacing-unit;
 }
 div.footnotes::before {
   content: "* * *";
