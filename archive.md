@@ -4,6 +4,7 @@ title: Archive
 permalink: /archive/
 ---
 
+{% if posts %}
 <ul class="archive">
   {% for post in site.posts %}
     {% unless post.next %}
@@ -35,3 +36,6 @@ permalink: /archive/
     </li>
   {% endfor %}
 </ul>
+{% else %}
+{% include empty.html %}
+{% endif %}

@@ -1,28 +1,22 @@
 ---
 layout: default
 ---
-
 <div class="content">
 
-  <p>robSafar.com is a thing. Behold.</p>
+    <hr> {% if posts %}
 
-  <hr>
-
-  <h3>Recently (relatively)</h3>
-
-  <ul class="post-list">
-    {% for post in site.posts limit:10 %}
-      <li>
-        <span class="mono">{{ post.date | date:"%d&nbsp;%b&nbsp;'%y" }}</span>&nbsp;
-        {% if post.platform %}
-          <a href="{{ post.exturl }}">"{{ post.title }}"</a>
-        {% else %}
-          <a href="{{ post.url }}">"{{ post.title }}"</a>
-        {% endif %}
-        {% if post.type %}<span class="grey"> //{{ post.type }}</span>{% endif %}
-        {% if post.platform %}<span class="grey">/{{ post.platform }}</span>{% endif %}
-      </li>
-    {% endfor %}
-  </ul>
+    <h3>Recently (relatively)</h3>
+    <ul class="post-list">
+        {% for post in site.posts limit:10 %}
+        <li>
+            <span class="mono">{{ post.date | date:"%d&nbsp;%b&nbsp;'%y" }}</span>&nbsp; {% if post.platform %}
+            <a href="{{ post.exturl }}">"{{ post.title }}"</a> {% else %}
+            <a href="{{ post.url }}">"{{ post.title }}"</a> {% endif %} {% if post.type %}<span class="grey"> //{{ post.type }}</span>{% endif %} {% if post.platform %}<span class="grey">/{{ post.platform }}</span>{% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    {% include empty.html %}
+    {% endif %}
 
 </div>

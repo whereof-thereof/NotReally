@@ -84,9 +84,10 @@ h6 {
   font-style: italic;
 }
 
-.site-header h3 {
+.site-title {
   text-transform: none;
   letter-spacing: normal;
+  font-weight: $bold-font-weight;
 }
 
 .mono {
