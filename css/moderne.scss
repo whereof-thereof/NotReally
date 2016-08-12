@@ -1,0 +1,18 @@
+---
+# Blank front matter
+---
+
+$dark: #111;
+$light: #eee;
+
+div.fullSquare {
+  background-color: $dark;
+  color: $light;
+  width: 90vh;
+  height: 90vw;
+  max-width: 90vw;
+  max-height: 90vh;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
