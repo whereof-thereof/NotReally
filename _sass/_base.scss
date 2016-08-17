@@ -36,6 +36,13 @@ html {
   font-kerning: normal;
 }
 
+h1, h2, h3, th, td, nav {
+  font-family: $mono-font-family;
+}
+th, td, nav {
+  font-size: $mono-font-size;
+}
+
 /**
  * Responsive type
  */
@@ -59,9 +66,9 @@ strong {
 h1, h2, h3, h4, h5, h6 {
   font-size: 1em;
   line-height: $base-line-height;
-  font-weight: 300;
+  font-weight: $base-font-weight;
   text-transform: uppercase;
-  letter-spacing: .1em;
+  letter-spacing: .2rem;
 }
 h1 {
   font-size: 2em;
@@ -212,11 +219,6 @@ th, td {
 }
 
 /* Lost & found */
-
-.site-header .site-title {
-  font-weight: bold;
-
-}
 
 .grey {
   color: $grey-color;
