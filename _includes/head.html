@@ -17,8 +17,8 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:creator" content="@robsafar" />
-  <meta property="og:url" content="{{ page.url }}" />
-  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 140 }}" />
   {% if page.gif %}<meta property="og:image" content="{{ page.gif | prepend: site.baseurl }}" />{% endif %}
   <script>
