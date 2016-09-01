@@ -4,10 +4,10 @@
   {% for my_page in site.pages %}
     {% unless my_page.exclude_from_nav %}
       {% if my_page.title %}
-        |&nbsp;<a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+        /&nbsp;<a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
       {% endif %}
     {% endunless %}
   {% endfor %}
-  |&nbsp;<a href="https://github.com/robSafar/robSafar.github.io">Repository</a>
+  /&nbsp;<a href="https://github.com/robSafar/robSafar.github.io">Repository</a>
 </nav>
 </footer>

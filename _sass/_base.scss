@@ -190,6 +190,8 @@ div.footnotes::before {
  */
 th, td {
   padding: $base-font-size / 4;
+  font-family: $mono-font-family;
+  font-size: $mono-font-size;
 }
 
 /**
