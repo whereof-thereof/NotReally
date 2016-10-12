@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1em;
   line-height: $base-line-height;
   font-weight: $base-font-weight;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: .1rem;
 }
 h1 {
