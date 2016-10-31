@@ -48,11 +48,11 @@ th, td, nav {
  */
 @media screen and (min-width: 400px) {
   html { font-size: $base-font-size + 1; }
-  .site-title { font-size: 12rem; }
+  .site-title { font-size: 11rem; }
 }
 @media screen and (min-width: 640px) {
   html { font-size: $base-font-size + 2; }
-  .site-title { font-size: 15rem; }
+  .site-title { font-size: 14rem; }
 }
 @media screen and (min-width: 728px) {
   html { font-size: $base-font-size + 4; }
