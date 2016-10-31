@@ -8,7 +8,7 @@ body {
   text-justify: inter-word;
 }
 
-header, footer, h1, h2, h3, h4, h5, h6, p, ul, ol, pre, blockquote, dl, fieldset, table {
+h1, h2, h3, h4, h5, h6, p, ul, ol, pre, blockquote, dl, fieldset, table {
   padding-left: $spacing-unit / 2;
   padding-right: $spacing-unit / 2;
   max-width: $max-width;
@@ -103,7 +103,6 @@ ul.archive li {
 header {
   margin-top: $huge-space;
   margin-bottom: $huge-space;
-  text-align: center;
 }
 
 /**
@@ -111,7 +110,6 @@ header {
   */
 .site-footer {
   margin-top: $huge-space;
-  text-align: center;
 }
 nav {
   padding-top: $spacing-unit;

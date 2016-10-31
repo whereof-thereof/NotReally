@@ -37,10 +37,10 @@ html {
 }
 
 h1, h2, h3, th, td, nav {
-  font-family: $mono-font-family;
+  font-family: $base-font-family;
 }
 th, td, nav {
-  font-size: $mono-font-size;
+  font-size: $base-font-size;
 }
 
 /**
@@ -72,11 +72,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
   font-size: 2em;
-  text-align: center;
 }
 h2 {
   font-size: 1.7em;
-  text-align: center;
   padding-top: 2 * $spacing-unit;
 }
 h4 {
@@ -92,9 +90,12 @@ h6 {
 }
 
 .site-title {
+  font-size: 17rem;
+  font-weight: $bold-font-weight;
   text-transform: none;
   letter-spacing: normal;
-  font-weight: $bold-font-weight;
+  word-wrap: break-word;
+  line-height: 1;
 }
 
 .mono {
@@ -110,7 +111,7 @@ a {
     text-decoration: none;
     border-bottom: 1px solid;
     &:visited {
-        color: darken($text-color, 5%);
+        color: $grey-color;
     }
     &:hover {
     }
@@ -118,6 +119,9 @@ a {
 
 header a {
   border-bottom: none;
+  &:visited {
+    color: $text-color;
+  }
 }
 
 /**
@@ -181,7 +185,7 @@ div.footnotes {
 div.footnotes::before {
   content: "* * *";
   display: block;
-  font-family: $mono-font-family;
+  font-family: $base-font-family;
   text-align: center;
 }
 
