@@ -8,5 +8,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-NJ2MGW');</script>
 <!-- End Google Tag Manager -->
 <header>
-  <h1><a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+  <h1><a
+    {% if page.layout == 'home' %}
+      class="site-title title-index"
+    {% else %}
+      class="site-title" 
+    {% endif %}
+    href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
 </header>
