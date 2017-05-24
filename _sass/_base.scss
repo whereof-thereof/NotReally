@@ -49,7 +49,6 @@ th, td, nav {
   letter-spacing: normal;
   word-wrap: break-word;
   line-height: 1;
-  background: url(https://avatars1.githubusercontent.com/u/6104449) no-repeat center;
   background-size: cover;
 }
 .title-index {
@@ -58,6 +57,10 @@ th, td, nav {
 .title-nonindex {
   font-size: 1rem;
 }
+#title1 { background-color: #fbb4ae; }
+#title2 { background-color: #ffffcc; }
+#title3 { background-color: #ccebc5; }
+#title4 { background-color: #b3cde3; }
 
 /**
  * Responsive type
