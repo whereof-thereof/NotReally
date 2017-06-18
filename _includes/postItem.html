@@ -1,0 +1,15 @@
+{% if post.platform %}
+<h3><a href="{{ post.exturl }}">"{{ post.title }}"</a></h3>
+{% else %}
+<h3><a href="{{ post.url }}">"{{ post.title }}"</a></h3>
+{% endif %}
+{% if post.type %}<span class="grey"> //{{ post.type }}</span>{% endif %}
+{% if post.platform %}<span class="grey"> /{{ post.platform }}</span>{% endif %}
+<em>
+{% if post.subtitle %}
+  {{ post.subtitle }}
+{% else %}
+  {{ post.content | strip_html | truncatewords:35 }}
+{% endif %}
+</em>
+<!--<br><span class="mono">{{ post.date | date:"%d&nbsp;%b" }}</span>-->
