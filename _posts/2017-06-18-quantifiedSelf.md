@@ -19,9 +19,9 @@ The aim of sharing this publicly is two-fold: in order to be open about the *pro
 
 ## Data capture
 
-The system relies on human (self-)observation and recording. The [Workflow app](https://itunes.apple.com/us/app/workflow-powerful-automation-made-simple/id915249334) is used to provide an easily-selectable list of common consumption activities (with free-type options) for user selection and recording along with automated date/time and postcode location variables. I've made a [duplicate Workflow script](https://workflow.is/workflows/3f6cb0a1052d4bdd88e9bb151f82f4c4) with the list details redacted to show the process involved.
+The system relies on human (self-)observation and recording. The [Workflow app](https://itunes.apple.com/us/app/workflow-powerful-automation-made-simple/id915249334) is used to provide an easily-selectable list of common consumption activities (with free-type options) along with automated date/time and postcode location variables. I've made a [duplicate Workflow script](https://workflow.is/workflows/3f6cb0a1052d4bdd88e9bb151f82f4c4) with the list details redacted to show the process involved.
 
-New records are appended to a CSV file stored in iCloud Drive. This platform was selected due to the iPhone's ability to store the file locally, modify it offline and upload to the iCloud later on. This ensures that data can still be captured in the absence of an active data connection.
+New records are appended to a CSV file stored in iCloud Drive. This platform was selected due to the iPhone's ability to store the file locally, modify it offline and upload to the iCloud later on. This ensures that data can still be captured in the absence of an active internet connection.
 
 ## Analysis
 
