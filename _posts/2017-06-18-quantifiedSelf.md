@@ -25,7 +25,7 @@ New records are appended to a CSV file stored in iCloud Drive. This platform was
 
 ## Analysis
 
-The analysis uses the statistical computing and graphics environment [R](https://cran.r-project.org). The [knitr](https://cran.r-project.org/web/packages/knitr/index.html) package is required to weave the R Markdown reporting script, and [ggplot2](https://cran.r-project.org/web/packages/ggplot2/index.html) is used as a quick and flexible plotting system.
+The analysis uses the statistical computing and graphics environment [R](https://cran.r-project.org). The [knitr](https://cran.r-project.org/web/packages/knitr/index.html) package is required to use the R Markdown reporting script, and [ggplot2](https://cran.r-project.org/web/packages/ggplot2/index.html) is used as a quick and flexible plotting system.
 
 All of the processing and analysis code can be found in my [quantifiedSelf GitHub repository](https://github.com/robSafar/quantifiedSelf). Knitting the `report.Rmd` file produces an HTML report: pulling the data directly from my local iCloud Drive Workflow folder, cleaning it, backing it up in the repository folder and then generating the report. A separate `script.R` script is used for the basic pre-plotting processing, which is strictly for ease of development - before exploring the data I can simply source that script rather than repeat some of the basic steps it executes.
 
