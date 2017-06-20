@@ -7,7 +7,7 @@ permalink: the-quantifiedSelf-1
 ---
 
 - [iOS Workflow template](https://workflow.is/workflows/3f6cb0a1052d4bdd88e9bb151f82f4c4) (data capture)
-- [R data processing scripts](https://github.com/robSafar/quantifiedSelf) (analysis)
+- [R scripts](https://github.com/robSafar/quantifiedSelf) (data analysis)
 
 While my iPhone and Apple Watch automatically keep records of certain aspects of my activity, there are other aspects of my life about which I'm curious to learn more than I could otherwise simply intuit.
 
