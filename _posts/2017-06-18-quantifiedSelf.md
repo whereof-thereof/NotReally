@@ -32,3 +32,7 @@ All of the processing and analysis code can be found in my [quantifiedSelf GitHu
 At some point other datasets may be merged and analysed with this, such as sleep and activity tracking (via [Sleep Cycle](https://itunes.apple.com/gb/app/sleep-cycle-alarm-clock/id320606217) and Apple's Activity apps respectively), for a larger, multi-dimensional analysis.
 
 In the meantime, I'll keep the [GitHub repo](https://github.com/robSafar/quantifiedSelf) updated and write up any significant developments.
+
+* * *
+
+*UPDATE 2017-08-27: I've combined this dataset with health/activity information, providing a very quick chart showing the relationship between active calorie burning and the various consumption activities. Grabbing the data from Apple's system involves going via a `.xml` file, which makes processing significantly longer. It seems worth it though, adding a whole new dimension to the report.*
