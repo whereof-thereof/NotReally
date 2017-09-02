@@ -36,8 +36,8 @@ html {
   font-kerning: normal;
 }
 
-h1, h2, h3, th, td, nav {
-  font-family: $base-font-family;
+h1, h2, h3, th, td, nav, .site-footer, .post-meta {
+  font-family: $disp-font-family;
 }
 th, td, nav {
   font-size: $base-font-size;
@@ -193,7 +193,7 @@ div.footnotes {
 div.footnotes::before {
   content: "* * *";
   display: block;
-  font-family: $base-font-family;
+  font-family: $disp-font-family;
   text-align: center;
 }
 

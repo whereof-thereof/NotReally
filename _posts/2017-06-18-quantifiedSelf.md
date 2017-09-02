@@ -9,9 +9,7 @@ permalink: the-quantifiedSelf-1
 - [iOS Workflow template](https://workflow.is/workflows/3f6cb0a1052d4bdd88e9bb151f82f4c4) (data capture)
 - [R scripts](https://github.com/robSafar/quantifiedSelf) (data analysis)
 
-While my iPhone and Apple Watch automatically keep records of certain aspects of my activity, there are other aspects of my life about which I'm curious to learn more than I could otherwise simply intuit.
-
-Hence, I have begun somewhat earnestly to record those other activities and analyse them as data.
+While my iPhone and Apple Watch automatically keep records of certain aspects of my activity, there are other aspects of my life about which I'm curious to learn more than I could otherwise simply intuit. So, I have begun somewhat earnestly to record those other activities and analyse them as data.
 
 In sharing my approach, I have tried to omit all of the details, data and reports of the consumption that I am monitoring. That doesn't preclude ever sharing any such details, and on request I'm happy to provide some dummy data if it helps to illustrate the process better.
 
@@ -35,4 +33,4 @@ In the meantime, I'll keep the [GitHub repo](https://github.com/robSafar/quantif
 
 * * *
 
-*UPDATE 2017-08-27: I've combined this dataset with health/activity information, providing a very quick chart showing the relationship between active calorie burning and the various consumption activities. Grabbing the data from Apple's system involves going via a `.xml` file, which makes processing significantly longer. It seems worth it though, adding a whole new dimension to the report.*
+***Update 2017-08-27**: I've combined this dataset with health/activity information, providing a very quick chart showing the relationship between active calorie burning and the various consumption activities. Grabbing the data from Apple's system involves going via a `.xml` file, which makes processing significantly longer. It seems worth it though, adding a whole new dimension to the report.*
