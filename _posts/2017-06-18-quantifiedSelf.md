@@ -33,4 +33,4 @@ In the meantime, I'll keep the [GitHub repo](https://github.com/robSafar/quantif
 
 * * *
 
-***Update 2017-08-27**: I've combined this dataset with health/activity information, providing a very quick chart showing the relationship between active calorie burning and the various consumption activities. Grabbing the data from Apple's system involves going via a `.xml` file, which makes processing significantly longer. It seems worth it though, adding a whole new dimension to the report.*
+***Update 2017-08-27**: I've combined this dataset with health/activity information, providing a very quick chart showing the relationship between active calorie burning and the various consumption activities. Grabbing the data from Apple's system involves going via an XML file, which makes processing significantly longer. It seems worth it though, adding a whole new dimension to the report.*
