@@ -13,10 +13,11 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://robsafar.com" # the base hostname & protocol for your site
 twitter_username: robsafar
-github_username:  whereof-thereof
+github_username:  robSafar
 
 # Build settings
 markdown: kramdown
-gems:
+plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
 permalink: /:title
