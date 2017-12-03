@@ -4,6 +4,18 @@ layout: default
 
 <h2>Topics</h2>
 <ul class="archive">
+  {% for page in site.pages %}
+    {% if page.subtitle %}
+      <li>
+        <h3><a href="{{ page.url }}">"{{ page.title }}"</a></h3>
+        {% if page.subtitle %}
+          {{ page.subtitle }}
+        {% endif %}
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+<ul class="archive">
   {% for post in site.posts limit:4 %}
     <li>
       {% include postItem.html %}

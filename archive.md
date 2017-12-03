@@ -4,6 +4,18 @@ title: Archive
 permalink: /archive/
 ---
 
+<ul class="archive">
+  {% for page in site.pages %}
+    {% if page.subtitle %}
+      <li>
+        <h3><a href="{{ page.url }}">"{{ page.title }}"</a></h3>
+        {% if page.subtitle %}
+          {{ page.subtitle }}
+        {% endif %}
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
 {% if site.posts %}
 <ul class="archive">
   {% for post in site.posts %}
