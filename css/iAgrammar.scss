@@ -21,6 +21,11 @@ html {
 
 // Grammar
 
+h1.post-title:before {
+    content: "#";
+    margin-right: 17px;
+}
+
 span.adj {
     color: $orange;
 }

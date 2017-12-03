@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "# Words that I like"
+title: Words that I like
 permalink: /words-i-like/
 subtitle: My growing dictionary
 customcss: /css/iAgrammar.css
