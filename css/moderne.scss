@@ -21,3 +21,24 @@ div.fullSquare {
 .fullSquare h3 {
   text-transform: none;
 }
+
+.wayHey {
+  position: relative;
+  margin: 0 auto;
+  background: magenta;
+  width: 400px;
+  height: 400px;
+  max-width: 70vh;
+  max-height: 70vw;
+}
+.wayHey img {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 70vw;
+  max-height: 70vh;
+  height: auto;
+  mix-blend-mode: luminosity;
+  -webkit-filter: grayscale(100%) contrast(250%);
+  filter: grayscale(100%) contrast(250%);
+  opacity: 1;
+}
