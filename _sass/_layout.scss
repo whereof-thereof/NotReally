@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, pre, blockquote, dl, fieldset, table {
 }
 
 hr {
-  margin: $spacing-unit auto;
+  margin: 2 * $spacing-unit auto;
   border: none;
 }
 hr::after {
