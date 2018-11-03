@@ -7,12 +7,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-NJ2MGW');</script>
 <!-- End Google Tag Manager -->
+{% if page.layout == 'home' %}<div class="mePhoto">
+  <!--<img src="/resources/mePhoto.png">-->
+</div>{% endif %}
 <header>
-  <h1><a
-    {% if page.layout == 'home' %}
-      class="site-title title-index"
-    {% else %}
-      class="site-title"
-    {% endif %}
-    href="{{ site.baseurl }}/"><span id="title1">rob</span><span id="title2">Saf</span><span id="title3">ar.</span><span id="title4">com</span></a></h1>
+  <h1><a href="{{ site.baseurl }}/"><span>rob</span><span>Safar</span></a></h1>
 </header>

@@ -1,243 +1,65 @@
 /**
- * Reset some basic elements
- */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-    margin: 0;
-    padding: 0;
-}
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-    margin-bottom: $spacing-unit;
-}
-
-/**
   * Typography
   */
 html {
-  font-family: $base-font-family;
-  color: $text-color;
-  font-size: $base-font-size;
-  font-weight: $base-font-weight;
-  line-height: $base-line-height;
+font-family: $base-font-family;
+color: $text-color;
+font-size: $base-font-size;
+font-weight: $base-font-weight;
+line-height: $base-line-height;
 
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
-  -moz-font-feature-settings: "kern" 1;
-  -o-font-feature-settings: "kern" 1;
-  font-feature-settings: "kern" 1;
-  font-kerning: normal;
-}
-
-h1, h2, h3, th, td, nav, .site-footer, .post-meta {
-  font-family: $disp-font-family;
-}
-th, td, nav {
-  font-size: $base-font-size;
+-webkit-text-size-adjust: 100%;
+-webkit-font-feature-settings: "kern" 1;
+-moz-font-feature-settings: "kern" 1;
+-o-font-feature-settings: "kern" 1;
+font-feature-settings: "kern" 1;
+font-kerning: normal;
 }
 
-.site-title {
-  font-weight: $bold-font-weight;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: break-word;
-  line-height: 1;
-  background-size: cover;
-}
-.title-index {
-  font-size: 9rem;
-}
-.title-nonindex {
-  font-size: 1rem;
+a, a:visited {
+    color: $blue;
 }
 
-/**
- * Responsive type
- */
-@media screen and (min-width: 400px) {
-  html { font-size: $base-font-size + 1; }
+::selection {
+    background: $yellow;
 }
-@media screen and (min-width: 640px) {
-  html { font-size: $base-font-size + 2; }
-  .title-index { font-size: 14rem; }
-}
-@media screen and (min-width: 728px) {
-  html { font-size: $base-font-size + 4; }
-  .title-index { font-size: 17rem; }
+::-moz-selection {
+    background: $yellow;
 }
 
-strong {
-  font-weight: $bold-font-weight;
+// Header
+header h1 {
+    line-height: 1;
+}
+header h1 a {
+    text-decoration: none;
+    font-weight: $bold-font-weight;
+}
+header h1 a span:nth-of-type(1) {
+    color: $red;
+}
+header h1 a span:nth-of-type(2) {
+    color: $blue;
 }
 
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-  font-size: 1em;
-  line-height: $base-line-height;
-  font-weight: $base-font-weight;
-  text-transform: capitalize;
-  letter-spacing: .1rem;
-}
-h1 {
-  font-size: 2em;
-}
-h2 {
-  font-size: 1.7em;
-  padding-top: 2 * $spacing-unit;
-}
-h4 {
-  font-style: italic;
-}
-h5 {
-  font-size: $small-font-size;
-
-}
-h6 {
-  font-size: $small-font-size;
-  font-style: italic;
+// Images
+article img {
+    max-width: 100%;
+    height: auto;
 }
 
-.mono {
-  font-family: $mono-font-family;
-  font-size: $mono-font-size;
-}
-
-/**
- * Links
- */
-a {
-    color: $text-color;
-    text-decoration: underline;
-    &:visited {
-        color: $grey-color;
-    }
-}
-
-header a {
-  text-decoration: none;
-  &:visited {
-    color: $text-color;
-  }
-}
-
-.externalLink {
-  background-image: linear-gradient(transparent,transparent),url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2210%22 height=%2210%22 viewBox=%220 0 10 10%22%3E%3Cpath fill=%22%23fff%22 stroke=%22%23000%22 d=%22M.5 3.518h5.982V9.5H.5z%22/%3E%3Cpath fill=%22%23000%22 d=%22M4.755-.16H9.99v5.39L8.417 6.774l-1.31-1.31L4.383 8.19 1.695 5.5l2.808-2.807-1.31-1.31z%22/%3E%3Cpath fill=%22%23fff%22 d=%22M8.984.845l.022 4.884L7.19 3.91 4.308 6.79 3.08 5.567l2.882-2.88L4.112.833z%22/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center right;
-  padding-right: 13px;
-}
-
-/**
- * Blockquotes
- */
-blockquote {
-  font-style: italic;
-}
-blockquote em {
-  font-weight: $bold-font-weight;
-}
-
-/**
- * Lists
- */
-ul, ol {
-    margin-left: $spacing-unit;
-    text-align: left;
-}
-
-li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
-}
-
-/**
- * Code formatting
- */
-pre,
-code {
+// Code
+code, pre {
     font-family: $mono-font-family;
-    font-size: $mono-font-size;
-    text-align: left;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
+}
+code {
     background-color: $grey-color-light;
 }
-code {
-    padding: 1px 3px;
-}
-pre {
-    padding: $spacing-unit;
-    overflow-x: auto;
-    white-space: pre-wrap;
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
 
-/**
-  * Footnotes
-  */
-div.footnotes {
-  font-size: $small-font-size;
-  padding-top: 2 * $spacing-unit;
-}
-div.footnotes::before {
-  content: "* * *";
-  display: block;
-  font-family: $disp-font-family;
-  text-align: center;
-}
-
-/**
- * Tables
- */
-th, td {
-  padding: $base-font-size / 4;
-  font-family: $mono-font-family;
-  font-size: $mono-font-size;
-}
-
-/**
- * Clearfix
- */
-%clearfix {
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
-
-/**
- * Icons
- */
-.icon {
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-        path {
-            fill: $grey-color;
-        }
-    }
-}
-
-/* Lost & found */
-
-.grey {
-  color: $grey-color;
-}
+// Anon
+.externalLink {
+    background-image: linear-gradient(transparent,transparent),url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2210%22 height=%2210%22 viewBox=%220 0 10 10%22%3E%3Cpath fill=%22%23fff%22 stroke=%22%23000%22 d=%22M.5 3.518h5.982V9.5H.5z%22/%3E%3Cpath fill=%22%23000%22 d=%22M4.755-.16H9.99v5.39L8.417 6.774l-1.31-1.31L4.383 8.19 1.695 5.5l2.808-2.807-1.31-1.31z%22/%3E%3Cpath fill=%22%23fff%22 d=%22M8.984.845l.022 4.884L7.19 3.91 4.308 6.79 3.08 5.567l2.882-2.88L4.112.833z%22/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding-right: 13px;
+  }

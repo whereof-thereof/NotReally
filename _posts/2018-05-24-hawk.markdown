@@ -1,0 +1,16 @@
+---
+layout: post
+title:  Hawk
+author: Rob Safar
+subtitle: Semi-automatic drawing with oil pastels
+image: "hawk.png"
+---
+What is there to say about this? It's a drawing technique that seems to work well with oil pastels, one which is very quick and rough and produces results that are cursorily effective if not accurate.
+
+First you just have to imagine the shape you want, conveived as a block of colour. In my *Hawk* example, this was the dark brown shape that formed the head. Once you can almost see the outline on your surface, scribble it in. There's no trying to keep within any lines. Rogue scribbles that may lie outside of your imaginary lines can be left as they are.
+
+Then just follow the same system for each subsequent shape. For Hawk, this was the dark brown body shape, followed by the lighter brown wings and tail, then the yellow beak and legs and lastly the white belly.
+
+The key to this process is in accepting what you've done so far and developing an emerging shape that builds upon an imperfect history. Hawk bears a fair amount of resemblance to a penguin, on reflection, perhaps a result of a desire for anthropomorphism - this is the automatic quality to the drawing. 
+
+Is this any good? Possibly not. But I feel that the technique warrants further exploration.

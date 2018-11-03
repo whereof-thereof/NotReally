@@ -1,15 +1,12 @@
-{% if post.platform %}
-<h3><a href="{{ post.exturl }}">"{{ post.title }}"</a></h3>
-{% else %}
-<h3><a href="{{ post.url }}">"{{ post.title }}"</a></h3>
-{% endif %}
-{% if post.type %}<span class="grey"> //{{ post.type }}</span>{% endif %}
-{% if post.platform %}<span class="grey"> /{{ post.platform }}</span>{% endif %}
-<em>
-{% if post.subtitle %}
-  {{ post.subtitle }}
-{% else %}
-  {{ post.content | strip_html | truncatewords:35 }}
-{% endif %}
-</em>
-<!--<br><span class="mono">{{ post.date | date:"%d&nbsp;%b" }}</span>-->
+<div class="postText">
+  <h3><span><a href="{{ post.url }}">"{{ post.title }}"</a></span></h3>
+  <p><span>
+  {% if post.subtitle %}
+    {{ post.subtitle }}
+  {% else %}
+    {{ post.content | strip_html | truncatewords:35 }}
+  {% endif %}
+  </span></p>
+  <p><span><em>{{ post.date | date:"%d&nbsp;%b&nbsp;%Y" }}</em></span></p>
+</div>
+{% if post.image %}<img src="/resources/{{ post.image }}">{% endif %}

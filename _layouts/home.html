@@ -1,22 +1,13 @@
 ---
 layout: default
 ---
-
-<h2>Topics</h2>
-<ul class="archive">
-  {% for page in site.pages %}
-    {% if page.subtitle %}
-      <li>
-        <h3><a href="{{ page.url }}">"{{ page.title }}"</a></h3>
-        {% if page.subtitle %}
-          <em>{{ page.subtitle }}</em>
-        {% endif %}
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul>
-<ul class="archive">
-  {% for post in site.posts limit:4 %}
+<div class="description">
+  {% if site.description %}
+  <p>{{ site.description }}</p>
+  {% endif %}
+</div>
+<ul class="cards">
+  {% for post in site.posts limit:10 %}
     <li>
       {% include postItem.html %}
     </li>

@@ -1,118 +1,121 @@
-body {
-  min-height: 100vh;
-  position: relative;
-}
-
-.post-content, .homepage-post {
-  text-align: left;
-  text-justify: inter-word;
-}
-
-h1, h2, h3, h4, h5, h6, p, ul, ol, pre, blockquote, dl, fieldset, table {
-  padding-left: $spacing-unit / 2;
-  padding-right: $spacing-unit / 2;
-  max-width: $max-width;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-hr {
-  margin: 2 * $spacing-unit auto;
-  border: none;
-}
-hr::after {
-  content: "* * *";
-  display: block;
-  font-family: $mono-font-family;
-  text-align: center;
-}
-
 /**
- * Images
+ * GRID ALL THE THINGS
  */
-img {
+
+main {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 10vw auto auto auto auto;
+}
+div.mePhoto {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    filter: grayscale(100%);
+    overflow: hidden;
+    object-fit: contain;
+}
+    div.mePhoto img {
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translateY(-50%) translateX(-50%);
+    }
+main header {
+    grid-column: 2 / 5;
+    grid-row: 2;
+}
+div.description {
+    grid-column: 3 / 5;
+    grid-row: 3;
+}
+main ul.cards {
+    grid-column: 2 / 5;
+    grid-row: 4;
+}
+main footer {
+    grid-column: 3 / 5;
+    grid-row: 5;
+    margin-top: 5em;
+}
+
+// Keep breakpoints to a minimum...
+@media screen and (max-width: 450px) {
+    main {
+        grid-template-columns: 0px 0px auto auto auto;
+    }
+    div.mePhoto {
+        grid-column: 1 / 5;
+    }
+}
+
+// Header
+
+header h1 a {
+    display: grid;
+    grid-template-columns: 3;
+    font-size: calc(1.2rem + 17vw);
+    max-width: 100vw;
+    overflow: hidden;
+}
+header h1 a span:nth-of-type(1) {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+header h1 a span:nth-of-type(2) {
+    grid-column: 2 / 4;
+    grid-row: 1;
+    width: min-content;
+}
+
+// Cards
+
+ul.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 0.5rem;
+    grid-auto-rows: minmax(100px, 300px);
+    list-style: none;
+    padding-left: 0;
+}
+ul.cards li {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: minmax(100px, 300px);
+    align-items: center;
+    overflow: hidden;
+    border: 5px solid $grey-color-dark;
+    background: $grey-color-light;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1); 
+}
+ul.cards li:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+ul.cards li img {
+    grid-column: 1;
+    grid-row: 1;
     max-width: 100%;
-    box-sizing: border-box;
-    vertical-align: middle;
-    padding: $spacing-unit / 2;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+}
+ul.cards li div.postText {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 1rem;
+    z-index: 5;
+}
+ul.cards li div.postText span {
+    background: white;
+    padding: 5px;
 }
 
-.post-list img {
-  width: 100%;
-  height: auto;
-}
+// Articles
 
-.post-header img {
-  width: 100%;
-  height: auto;
-}
-
-/**
-  * Videos
-  */
-.video-wrapper {
-	position: relative;
-	padding-bottom: $huge-space;
-	padding-top: $spacing-unit;
-	height: 0;
-}
-.video-wrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-/**
-  * Blockquotes
-  */
-blockquote {
-  padding-left: $spacing-unit;
-  > :last-child {
-    margin-bottom: 0;
-  }
-}
-
-/**
-  * Lists
-  */
-
-ul, ol {
-  padding-left: 2 * $spacing-unit;
-}
-
-ul.post-list, ul.archive {
-  list-style-type: square;
-}
-
-ul.archive h3 {
-  margin-top: $spacing-unit;
-  margin-bottom: 0;
-}
-
-ul.archive li {
-  margin-bottom: $spacing-unit;
-}
-
-/**
-  * Header
-  */
-header {
-  margin-top: $huge-space;
-  margin-bottom: $huge-space;
-}
-
-/**
-  * Footer
-  */
-.site-footer {
-  margin-top: $huge-space*2;
-}
-nav {
-  padding-top: $spacing-unit;
-  padding-bottom: $huge-space;
+article, main div.container {
+    grid-column: 3 / 5;
+    grid-row: 3;
+    max-width: 65ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

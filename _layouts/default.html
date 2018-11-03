@@ -2,18 +2,20 @@
 <html>
   {% include head.html %}
   <body>
-    {% include header.html %}
-    {{ content }}
-    {% include footer.html %}
-    <script>
-      // External links 
-      var linkList = document.getElementsByTagName("A");
-      var i;
-      for (i = 0; i < linkList.length; i++) {
-        if ( !linkList[i].host.match(/robsafar|robSafar|127\.0\.0\.1/) ) {
-          document.getElementsByTagName("A")[i].classList.add("externalLink");
+    <main>
+      {% include header.html %}
+      {{ content }}
+      {% include footer.html %}
+      <script>
+        // External links 
+        var linkList = document.getElementsByTagName("A");
+        var i;
+        for (i = 0; i < linkList.length; i++) {
+          if ( !linkList[i].host.match(/robsafar|robSafar|127\.0\.0\.1/) ) {
+            document.getElementsByTagName("A")[i].classList.add("externalLink");
+          }
         }
-      }
-    </script>
+      </script>
+    </main>
   </body>
 </html>
