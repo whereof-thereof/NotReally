@@ -4,8 +4,8 @@
 @charset "utf-8";
 
 // Variables
-$base-font-family: "IBM Plex Mono", monospace;
-$mono-font-family: "IBM Plex Mono", monospace;
+$base-font-family: "Space Mono", monospace;
+$mono-font-family: "Space Mono", monospace;
 $base-font-size:   17px;
 $base-font-weight: 400;
 $bold-font-weight: 700;
@@ -20,8 +20,8 @@ $text-color:       #333;
 $grey-color:       #8F8F8C;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
-$red:              rgb(178,84,80);
-$blue:             rgb(89,137,178);
+$red:              rgb(114,114,114);
+$blue:             rgb(65,65,65);
 $yellow:           rgb(251,255,165);
 $blue-light:       lighten($blue, 25%);
 
