@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
-<div class="description">
-  {% if site.description %}
-  <p>{{ site.description }}</p>
-  {% endif %}
-</div>
+{% if site.description %}
+  <div class="description">
+    <p id="description_p"><!--{{ site.description }}--></p>
+  </div>
+{% endif %}
 <ul class="cards">
   {% for post in site.posts limit:10 %}
     <li>
