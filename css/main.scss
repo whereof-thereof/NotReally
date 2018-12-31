@@ -17,13 +17,12 @@ $spacing-unit:     2em;
 $max-width:        728px;
 
 $text-color:       #333;
-$grey-color:       #8F8F8C;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-$red:              rgb(114,114,114);
-$blue:             rgb(65,65,65);
+$grey-color:       rgb(125,125,125);
+$grey-color-light: rgb(240,240,240);
+$grey-color-dark:  rgb(65,65,65);
+$red:              rgb(244,66,83);
+$blue:             rgb(40,102,150);
 $yellow:           rgb(251,255,165);
-$blue-light:       lighten($blue, 25%);
 
 
 

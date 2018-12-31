@@ -1,12 +1,9 @@
 <div class="postText">
-  <h3><span><a href="{{ post.url }}">"{{ post.title }}"</a></span></h3>
-  <p><span>
+  <h3><span><a href="{% if post.exturl %}{{ post.exturl }}{% else %}{{ post.url }}{% endif %}">"{{ post.title }}"</a></span></h3>
   {% if post.subtitle %}
-    {{ post.subtitle }}
-  {% else %}
-    {{ post.content | strip_html | truncatewords:35 }}
+    <p><span>{{ post.subtitle }}</span></p>
   {% endif %}
-  </span></p>
-  <p><span><em>{{ post.date | date:"%d&nbsp;%b&nbsp;%Y" }}</em></span></p>
+  <p><span>{{ post.date | date:"%d&nbsp;%b&nbsp;%Y" }}</span></p>
 </div>
+{% if post.extimage %}<img src="{{ post.extimage }}">{% endif %}
 {% if post.image %}<img src="/resources/{{ post.image }}">{% endif %}
