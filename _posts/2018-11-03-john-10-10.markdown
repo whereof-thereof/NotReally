@@ -3,4 +3,5 @@ title:  John 10:10
 author: Rob Safar
 subtitle: A page from another book
 exturl: https://john-io.io/
+extimg: https://pbs.twimg.com/media/CmndoWoXgAArLvx.jpg
 ---

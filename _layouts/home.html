@@ -8,8 +8,6 @@ layout: default
 {% endif %}
 <ul class="cards">
   {% for post in site.posts limit:10 %}
-    <li>
       {% include postItem.html %}
-    </li>
   {% endfor %}
 </ul>
