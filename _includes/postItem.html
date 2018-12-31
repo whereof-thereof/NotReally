@@ -1,7 +1,7 @@
 <li style="{% if post.extimg %}background: url('{{ post.extimg }}');{% endif %}{% if post.image %}background: url('/resources/{{ post.image }}');{% endif %}background-size: cover;">
   <div class="postText">
-    <h3><span><a href="{% if post.exturl %}{{ post.exturl }}{% else %}{{ post.url }}{% endif %}">"{{ post.title }}"</a></span></h3>
+    <p class="postDate"><span>{{ post.date | date:"%d&nbsp;%b&nbsp;%Y" }}</span></p>
     {% if post.subtitle %}<p><span>{{ post.subtitle }}</span></p>{% endif %}
-    <p><span>{{ post.date | date:"%d&nbsp;%b&nbsp;%Y" }}</span></p>
+    <h3><span><a href="{% if post.exturl %}{{ post.exturl }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a></span></h3>
   </div>
 </li>

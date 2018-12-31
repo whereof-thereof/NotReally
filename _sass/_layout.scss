@@ -75,20 +75,16 @@ header h1 a span:nth-of-type(2) {
 // Cards
 
 ul.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 0.5rem;
-    grid-auto-rows: minmax(100px, 300px);
     list-style: none;
     padding-left: 0;
 }
 ul.cards li {
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: minmax(100px, 300px);
-    align-items: center;
+    grid-template-rows: 1fr auto;
+    max-width: 100%;
+    height: 65vh;
     overflow: hidden;
-    border: 5px solid $grey-color-dark;
+    margin: 1rem;
     background: $grey-color-light;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1); 
@@ -97,14 +93,13 @@ ul.cards li:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 ul.cards li div.postText {
-    grid-column: 1;
-    grid-row: 1;
-    display: flex;
-    flex-direction: column-reverse;
-    padding: 1rem;
-    z-index: 5;
+    grid-row: 2;
+    margin: 1rem;
 }
-ul.cards li div.postText span {
+ul.cards li h3 {
+    font-size: 1.65rem;
+}
+ul.cards li span {
     background: white;
     padding: 5px;
 }
