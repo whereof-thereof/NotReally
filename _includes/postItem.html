@@ -1,4 +1,4 @@
-<li style="{% if post.extimg %}background: url('{{ post.extimg }}');{% endif %}{% if post.image %}background: url('/resources/{{ post.image }}');{% endif %}background-size: cover;">
+<li style="{% if post.extimg %}background: url('{{ post.extimg }}'),linear-gradient(to right, grey, grey);{% endif %}{% if post.image %}background: url('/resources/{{ post.image }}'),linear-gradient(to right, grey, grey);{% endif %}background-size: cover;">
   <div class="postText">
     <p class="postDate"><span>{{ post.date | date:"%d&nbsp;%b&nbsp;%Y" }}</span></p>
     {% if post.subtitle %}<p><span>{{ post.subtitle }}</span></p>{% endif %}
