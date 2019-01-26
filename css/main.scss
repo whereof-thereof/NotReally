@@ -4,10 +4,10 @@
 @charset "utf-8";
 
 // Variables
-$base-font-family: "Space Mono", monospace;
-$mono-font-family: "Space Mono", monospace;
+$base-font-family: "Roboto Mono", monospace;
+$mono-font-family: "Roboto Mono", monospace;
 $base-font-size:   17px;
-$base-font-weight: 400;
+$base-font-weight: 300;
 $bold-font-weight: 700;
 $base-line-height: 1.8;
 
@@ -16,14 +16,43 @@ $small-font-size:  $base-font-size * 0.875;
 $spacing-unit:     2em;
 $max-width:        728px;
 
-$text-color:       #333;
-$grey-color:       rgb(125,125,125);
-$grey-color-light: rgb(240,240,240);
-$grey-color-dark:  rgb(65,65,65);
-$red:              rgb(244,66,83);
-$blue:             rgb(40,102,150);
-$yellow:           rgb(251,255,165);
+// gruvbox colours
+$bg:                #fbf1c7;
+$red:               #cc241d;
+$green:             #98971a;
+$yellow:            #d79921;
+$blue:              #458588;
+$purple:            #b16286;
+$aqua:              #689d6a;
+$gray:              #7c6f64;
+$grayl:             #928374;
+$red1:              #9d0006;
+$green1:            #79740e;
+$yellow1:           #b57614;
+$blue1:             #076678;
+$purple1:           #8f3f71;
+$aqua1:             #427b58;
+$fg:                #3c3836;
+$bg0_h:             #f9f5d7;
+$bg0:               #fbf1c7;
+$bg1:               #ebdbb2;
+$bg2:               #d5c4a1;
+$bg3:               #bdae93;
+$bg4:               #a89984;
+$orange:            #d65d0e;
+$bg0_s:             #f2e5bc;
+$fg4:               #7c6f64;
+$fg3:               #665c54;
+$fg2:               #504945;
+$fg1:               #3c3836;
+$fg0:               #282828;
+$orange1:           #af3a03;
 
+$background-colour:$bg0_h;
+$text-colour:       $fg0;
+$grey-colour:       $gray;
+$grey-colour-light: $bg2;
+$grey-colour-dark:  $fg1;
 
 
 

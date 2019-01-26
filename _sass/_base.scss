@@ -1,9 +1,11 @@
+body { background-color: $background-colour; }
+
 /**
   * Typography
   */
 html {
 font-family: $base-font-family;
-color: $text-color;
+color: $text-colour;
 font-size: $base-font-size;
 font-weight: $base-font-weight;
 line-height: $base-line-height;
@@ -16,15 +18,17 @@ font-feature-settings: "kern" 1;
 font-kerning: normal;
 }
 
+strong { font-weight: $bold-font-weight;; }
+
 a, a:visited {
     color: $blue;
 }
 
 ::selection {
-    background: $yellow;
+    background: $yellow1; color: $background-colour;
 }
 ::-moz-selection {
-    background: $yellow;
+    background: $yellow1; color: $background-colour;
 }
 
 // Header
@@ -36,16 +40,38 @@ header h1 a {
     font-weight: $bold-font-weight;
 }
 header h1 a span:nth-of-type(1) {
-    color: $grey-color;
+    color: $grey-colour;
 }
 header h1 a span:nth-of-type(2) {
-    color: $grey-color-dark;
+    color: $grey-colour-dark;
 }
 
-// Images
-article img {
-    max-width: 100%;
-    height: auto;
+// Lists
+
+ol {
+    counter-reset: section; 
+    list-style-type: none; 
+}
+ol li::before {
+    counter-increment: section; 
+    content: "." counter(section); 
+    color: #cc241d; 
+    display:inline-block; 
+    width: 1em; 
+    margin-left: -1.5em;
+    margin-right: 0.5em;
+    text-align: right;
+    direction: rtl; }
+ul {
+    list-style: none; counter-reset: section;
+}
+ul li::before {
+    content: "\25cb";  
+    color: #cc241d; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
 }
 
 // Code
@@ -53,7 +79,7 @@ code, pre {
     font-family: $mono-font-family;
 }
 code {
-    background-color: $grey-color-light;
+    background-color: $grey-colour-light;
 }
 
 // Anon
@@ -125,3 +151,16 @@ code {
     83%{background-color: rgb(255, 127, 255);}
     91%{background-color: rgb(255, 127, 190);}
 }
+
+// ∀∄∎
+
+.path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s linear forwards;
+  }
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }

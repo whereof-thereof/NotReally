@@ -29,13 +29,17 @@ div.description {
     grid-column: 3 / 5;
     grid-row: 3;
 }
-main ul.cards {
+div.wellHelloThere {
     grid-column: 2 / 5;
     grid-row: 4;
 }
+main ul.cards {
+    grid-column: 2 / 5;
+    grid-row: 5;
+}
 main footer {
     grid-column: 3 / 5;
-    grid-row: 5;
+    grid-row: 6;
 }
 
 // Keep breakpoints to a minimum...
@@ -69,7 +73,13 @@ header h1 a span:nth-of-type(2) {
     grid-column: 2 / 4;
     grid-row: 1;
     width: min-content;
-    
+}
+
+// Stupid hello thing
+
+.wellHelloThere svg {
+    width: 95vw;
+    height: auto;
 }
 
 // Cards
@@ -85,7 +95,7 @@ ul.cards li {
     height: 65vh;
     overflow: hidden;
     margin: 1rem;
-    background: $grey-color-light;
+    background: $grey-colour-light;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1); 
 }
@@ -100,7 +110,7 @@ ul.cards li h3 {
     font-size: 1.65rem;
 }
 ul.cards li span {
-    background: white;
+    background: $background-colour;
     padding: 5px;
 }
 
@@ -117,6 +127,14 @@ article, main div.container {
 }
 article header {
     margin-bottom: 3rem;
+}
+
+// Images
+
+article img {
+    max-width: 99%;
+    height: auto;
+    border: 1px solid $text-colour;
 }
 
 // Anon
