@@ -77,8 +77,13 @@ header h1 a span:nth-of-type(2) {
 
 // Stupid hello thing
 
+.wellHelloThere {
+    width: 100%;
+    height: auto;
+    margin: $spacing-unit auto $spacing-unit auto;
+}
 .wellHelloThere svg {
-    width: 95vw;
+    width: 100%;
     height: auto;
 }
 

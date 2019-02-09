@@ -1,19 +1,9 @@
 ---
-layout: default
+layout: post
 ---
-{% if site.description %}
-  <div class="description">
-    <p id="description_p"><!--{{ site.description }}--></p>
-  </div>
-{% endif %}
-
-<div class="wellHelloThere">
-    
-</div>
-
 
 <ul class="cards">
-  {% for post in site.posts limit:10 %}
-      {% include postItem.html %}
+  {% for post in site.posts limit:1 %}
+      {{ post.content }}
   {% endfor %}
 </ul>
