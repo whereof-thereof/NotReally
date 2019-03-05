@@ -7,38 +7,16 @@ main {
     grid-template-columns: auto auto auto auto auto;
     grid-template-rows: 10vw auto auto auto auto;
 }
-div.mePhoto {
-    grid-column: 1 / 4;
-    grid-row: 1;
-    filter: grayscale(100%);
-    overflow: hidden;
-    object-fit: contain;
-}
-    div.mePhoto img {
-        position: absolute;
-        width: 100%;
-        left: 50%;
-        top: 50%;
-        -webkit-transform: translateY(-50%) translateX(-50%);
-    }
 main header {
     grid-column: 2 / 5;
     grid-row: 2;
-}
-div.description {
-    grid-column: 3 / 5;
-    grid-row: 3;
-}
-div.wellHelloThere {
-    grid-column: 2 / 5;
-    grid-row: 4;
 }
 main ul.cards {
     grid-column: 2 / 5;
     grid-row: 5;
 }
 main footer {
-    grid-column: 3 / 5;
+    grid-column: 2 / 5;
     grid-row: 6;
 }
 
@@ -97,7 +75,7 @@ ul.cards li {
     display: grid;
     grid-template-rows: 1fr auto;
     max-width: 100%;
-    height: 65vh;
+    height: 45vh;
     overflow: hidden;
     margin: 1rem;
     background: $grey-colour-light;
@@ -109,7 +87,7 @@ ul.cards li:hover {
 }
 ul.cards li div.postText {
     grid-row: 2;
-    margin: 1rem;
+    padding: 1rem;
 }
 ul.cards li h3 {
     font-size: 1.65rem;
@@ -117,6 +95,10 @@ ul.cards li h3 {
 ul.cards li span {
     background: $background-colour;
     padding: 5px;
+}
+ul.cards .postText, ul.cards .postText a, ul.cards .postText a:visited {
+    color: #fff;
+    background: linear-gradient(to bottom, transparent, $standout-colour);
 }
 
 // Articles
@@ -131,7 +113,10 @@ article, main div.container {
     margin-bottom: 5rem;
 }
 article header {
-    margin-bottom: 3rem;
+    margin-bottom: 2 * $spacing-unit;
+}
+article footer {
+    margin-top: 2 * $spacing-unit;
 }
 
 // Images
@@ -139,7 +124,7 @@ article header {
 article img {
     max-width: 99%;
     height: auto;
-    border: 1px solid $text-colour;
+    border: 1px solid $spice-colour;
 }
 
 // Anon

@@ -18,17 +18,103 @@ font-feature-settings: "kern" 1;
 font-kerning: normal;
 }
 
-strong { font-weight: $bold-font-weight;; }
+
+.gel-canon {
+    font-size: 32px;
+    line-height: 36px;
+}
+.gel-trafalgar {
+    font-size: 24px;
+    line-height: 28px;
+}
+.gel-paragon {
+    font-size: 22px;
+    line-height: 26px;
+}
+.gel-doublePica, blockquote {
+    font-size: 20px;
+    line-height: 24px;
+}
+.gel-greatPrimer, article h2 {
+    font-size: 18px;
+    line-height: 22px;
+}
+.gel-bodyCopy {
+    font-size: 16px;
+    line-height: 22px;
+}
+.gel-pica {
+    font-size: 16px;
+    line-height: 20px;
+}
+.gel-longPrimer, hr + p > em {
+    font-size: 15px;
+    line-height: 18px;
+}
+.gel-brevier {
+    font-size: 14px;
+    line-height: 18px;
+}
+.gel-minion {
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 600px) {
+    .gel-canon {
+        font-size: 52px;
+        line-height: 56px;
+    }
+    .gel-trafalgar {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .gel-paragon {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .gel-doublePica, blockquote {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .gel-greatPrimer, article h2 {
+        font-size: 21px;
+        line-height: 24px;
+    }
+    .gel-bodyCopy {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .gel-pica {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .gel-longPrimer, hr + p > em {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .gel-brevier {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .gel-minion {
+        font-size: 13px;
+        line-height: 16px;
+    }
+}
+
+strong { font-weight: $bold-font-weight; }
 
 a, a:visited {
-    color: $blue1;
+    color: $link-colour;
 }
 
 ::selection {
-    background: $yellow1; color: $background-colour;
+    background: $select-colour; color: $background-colour;
 }
 ::-moz-selection {
-    background: $yellow1; color: $background-colour;
+    background: $select-colour; color: $background-colour;
 }
 
 // Header
@@ -55,7 +141,7 @@ ol {
 ol li::before {
     counter-increment: section; 
     content: "." counter(section); 
-    color: $red1; 
+    color: $spice-colour; 
     display:inline-block; 
     width: 1em; 
     margin-left: -1.5em;
@@ -67,7 +153,7 @@ ul {
 }
 ul li::before {
     content: "\25cb";  
-    color: $red1; 
+    color: $spice-colour; 
     font-weight: bold; 
     display: inline-block; 
     width: 1em; 
@@ -79,12 +165,12 @@ code, pre {
     font-family: $mono-font-family;
 }
 code {
-    color: $green1;
+    color: $raw-colour;
 }
 
 // Anon
 .externalLink {
-    background-image: linear-gradient(transparent,transparent),url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2210%22 height=%2210%22 viewBox=%220 0 10 10%22%3E%3Cpath fill=%22%23f9f5d7%22 stroke=%22%23282828%22 d=%22M.5 3.518h5.982V9.5H.5z%22/%3E%3Cpath fill=%22%23282828%22 d=%22M4.755-.16H9.99v5.39L8.417 6.774l-1.31-1.31L4.383 8.19 1.695 5.5l2.808-2.807-1.31-1.31z%22/%3E%3Cpath fill=%22%23f9f5d7%22 d=%22M8.984.845l.022 4.884L7.19 3.91 4.308 6.79 3.08 5.567l2.882-2.88L4.112.833z%22/%3E%3C/svg%3E");
+    background-image: linear-gradient(transparent,transparent),url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2210%22 height=%2210%22 viewBox=%220 0 10 10%22%3E%3Cpath fill=%22%23ffffff%22 stroke=%22%23404040%22 d=%22M.5 3.518h5.982V9.5H.5z%22/%3E%3Cpath fill=%22%23404040%22 d=%22M4.755-.16H9.99v5.39L8.417 6.774l-1.31-1.31L4.383 8.19 1.695 5.5l2.808-2.807-1.31-1.31z%22/%3E%3Cpath fill=%22%23ffffff%22 d=%22M8.984.845l.022 4.884L7.19 3.91 4.308 6.79 3.08 5.567l2.882-2.88L4.112.833z%22/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: center right;
     padding-right: 13px;
