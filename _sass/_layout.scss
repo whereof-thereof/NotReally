@@ -32,7 +32,7 @@ main footer {
 
 // Header
 
-header h1 a {
+header a {
     display: grid;
     grid-template-columns: 3;
     font-size: calc(1.2rem + 17vw);
@@ -40,14 +40,14 @@ header h1 a {
     overflow: hidden;
     text-transform: uppercase;
 }
-header h1 a span:nth-of-type(1) {
+header a span:nth-of-type(1) {
     grid-column: 1 / 3;
     grid-row: 1;
 }
-header h1 a span:nth-of-type(1)::first-letter {
+header a span:nth-of-type(1)::first-letter {
     text-transform: lowercase;
 }
-header h1 a span:nth-of-type(2) {
+header a span:nth-of-type(2) {
     grid-column: 2 / 4;
     grid-row: 1;
     width: min-content;
@@ -103,7 +103,7 @@ ul.cards .postText, ul.cards .postText a, ul.cards .postText a:visited {
 
 // Articles
 
-article, main div.container {
+article, main div.container, section {
     grid-column: 3 / 5;
     grid-row: 3;
     max-width: 65ch;
@@ -112,14 +112,18 @@ article, main div.container {
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
-article header {
+article header, section header {
     margin-bottom: 2 * $spacing-unit;
 }
-article footer {
+article footer, section footer {
     margin-top: 2 * $spacing-unit;
 }
 
 // Images
+
+.post-content img:first-child {
+    margin-bottom: $spacing-unit;
+}
 
 article img {
     max-width: 99%;
