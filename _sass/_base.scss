@@ -129,6 +129,9 @@ header a {
     text-decoration: none;
     font-weight: $bold-font-weight;
 }
+header a span {
+    font-family: $mono-font-family;
+}
 header a span:nth-of-type(1) {
     color: $grey-colour;
 }

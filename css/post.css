@@ -1,7 +1,6 @@
 main header {
-    grid-column: 3 / 4;
+    grid-column: 2 / 3;
 }
-
-header h1 a {
-    font-size: calc(2rem + 85%);
+main header a {
+    font-size: 2rem;
 }
