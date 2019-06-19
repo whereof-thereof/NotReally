@@ -52,6 +52,7 @@ font-kerning: normal;
     line-height: 18px;
 }
 .gel-brevier {
+    font-family: $mono-font-family;
     font-size: 14px;
     line-height: 18px;
 }
@@ -102,6 +103,15 @@ font-kerning: normal;
         font-size: 13px;
         line-height: 16px;
     }
+}
+
+.gel-trafalgar, .gel-bodyCopy h2, hr + p > em > strong {
+    font-family: $mono-font-family;
+    display: inline-block;
+    background-color: $text-colour;
+    color: #FFF;
+    font-weight: 200;
+    font-style: normal;
 }
 
 article h2, article h3 {
