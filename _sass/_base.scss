@@ -25,7 +25,7 @@ font-kerning: normal;
     text-transform: uppercase;
 }
 
-.gel-trafalgar, .gel-body-copy h2, hr + p > em > strong {
+.gel-trafalgar, h1, .gel-body-copy h2, hr + p > em > strong {
     font-family: $mono-font-family;
     display: inline-block;
     background-color: $text-colour;
