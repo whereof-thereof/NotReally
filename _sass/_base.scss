@@ -18,94 +18,14 @@ font-feature-settings: "kern" 1;
 font-kerning: normal;
 }
 
-
-.gel-canon {
-    font-size: 32px;
-    line-height: 36px;
-}
-.gel-trafalgar {
-    font-size: 24px;
-    line-height: 28px;
-}
-.gel-paragon {
-    font-size: 22px;
-    line-height: 26px;
-}
-.gel-doublePica, blockquote {
-    font-size: 20px;
-    line-height: 24px;
-}
-.gel-greatPrimer, article h2 {
-    font-size: 18px;
-    line-height: 22px;
-}
-.gel-bodyCopy {
-    font-size: 16px;
-    line-height: 22px;
-}
-.gel-pica {
-    font-size: 16px;
-    line-height: 20px;
-}
-.gel-longPrimer, hr + p > em {
-    font-size: 15px;
-    line-height: 18px;
-}
 .gel-brevier {
     font-family: $mono-font-family;
-    font-size: 14px;
-    line-height: 18px;
 }
 .gel-minion {
-    font-size: 12px;
-    line-height: 16px;
     text-transform: uppercase;
 }
 
-@media screen and (min-width: 600px) {
-    .gel-canon {
-        font-size: 52px;
-        line-height: 56px;
-    }
-    .gel-trafalgar {
-        font-size: 36px;
-        line-height: 40px;
-    }
-    .gel-paragon {
-        font-size: 28px;
-        line-height: 32px;
-    }
-    .gel-doublePica, blockquote {
-        font-size: 26px;
-        line-height: 30px;
-    }
-    .gel-greatPrimer, article h2 {
-        font-size: 21px;
-        line-height: 24px;
-    }
-    .gel-bodyCopy {
-        font-size: 18px;
-        line-height: 24px;
-    }
-    .gel-pica {
-        font-size: 18px;
-        line-height: 22px;
-    }
-    .gel-longPrimer, hr + p > em {
-        font-size: 15px;
-        line-height: 20px;
-    }
-    .gel-brevier {
-        font-size: 14px;
-        line-height: 18px;
-    }
-    .gel-minion {
-        font-size: 13px;
-        line-height: 16px;
-    }
-}
-
-.gel-trafalgar, .gel-bodyCopy h2, hr + p > em > strong {
+.gel-trafalgar, .gel-body-copy h2, hr + p > em > strong {
     font-family: $mono-font-family;
     display: inline-block;
     background-color: $text-colour;
@@ -185,75 +105,13 @@ code {
     color: $raw-colour;
 }
 
-// Anon
+// External link icon (à la Wikipedia)
 p > a.externalLink, li > a.externalLink {
     background-image: linear-gradient(transparent,transparent),url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2210%22 height=%2210%22 viewBox=%220 0 10 10%22%3E%3Cpath fill=%22%23ffffff%22 stroke=%22%23404040%22 d=%22M.5 3.518h5.982V9.5H.5z%22/%3E%3Cpath fill=%22%23404040%22 d=%22M4.755-.16H9.99v5.39L8.417 6.774l-1.31-1.31L4.383 8.19 1.695 5.5l2.808-2.807-1.31-1.31z%22/%3E%3Cpath fill=%22%23ffffff%22 d=%22M8.984.845l.022 4.884L7.19 3.91 4.308 6.79 3.08 5.567l2.882-2.88L4.112.833z%22/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: center right;
     padding-right: 13px;
   }
-
-.urghRainbows {
-    animation: rainbow 6.5s linear;
-    animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes rainbow {
-    100%,0%{background-color: rgb(255, 127, 127);}
-    8%{background-color: rgb(255, 190, 125);}
-    16%{background-color: rgb(255, 255, 127);}
-    25%{background-color: rgb(190, 255, 127);}
-    33%{background-color: rgb(127, 255, 127);}
-    41%{background-color: rgb(127, 255, 190);}
-    50%{background-color: rgb(127, 255, 255);}
-    58%{background-color: rgb(127, 190, 255);}
-    66%{background-color: rgb(127, 127, 255);}
-    75%{background-color: rgb(190, 127, 255);}
-    83%{background-color: rgb(255, 127, 255);}
-    91%{background-color: rgb(255, 127, 190);}
-}
-@-moz-keyframes rainbow {
-    100%,0%{background-color: rgb(255, 127, 127);}
-    8%{background-color: rgb(255, 190, 125);}
-    16%{background-color: rgb(255, 255, 127);}
-    25%{background-color: rgb(190, 255, 127);}
-    33%{background-color: rgb(127, 255, 127);}
-    41%{background-color: rgb(127, 255, 190);}
-    50%{background-color: rgb(127, 255, 255);}
-    58%{background-color: rgb(127, 190, 255);}
-    66%{background-color: rgb(127, 127, 255);}
-    75%{background-color: rgb(190, 127, 255);}
-    83%{background-color: rgb(255, 127, 255);}
-    91%{background-color: rgb(255, 127, 190);}
-}
-@-o-keyframes rainbow {
-    100%,0%{background-color: rgb(255, 127, 127);}
-    8%{background-color: rgb(255, 190, 125);}
-    16%{background-color: rgb(255, 255, 127);}
-    25%{background-color: rgb(190, 255, 127);}
-    33%{background-color: rgb(127, 255, 127);}
-    41%{background-color: rgb(127, 255, 190);}
-    50%{background-color: rgb(127, 255, 255);}
-    58%{background-color: rgb(127, 190, 255);}
-    66%{background-color: rgb(127, 127, 255);}
-    75%{background-color: rgb(190, 127, 255);}
-    83%{background-color: rgb(255, 127, 255);}
-    91%{background-color: rgb(255, 127, 190);}
-}
-@keyframes rainbow { 
-    100%,0%{background-color: rgb(255, 127, 127);}
-    8%{background-color: rgb(255, 190, 125);}
-    16%{background-color: rgb(255, 255, 127);}
-    25%{background-color: rgb(190, 255, 127);}
-    33%{background-color: rgb(127, 255, 127);}
-    41%{background-color: rgb(127, 255, 190);}
-    50%{background-color: rgb(127, 255, 255);}
-    58%{background-color: rgb(127, 190, 255);}
-    66%{background-color: rgb(127, 127, 255);}
-    75%{background-color: rgb(190, 127, 255);}
-    83%{background-color: rgb(255, 127, 255);}
-    91%{background-color: rgb(255, 127, 190);}
-}
 
 // SVG animations
 

@@ -4,10 +4,10 @@ layout: default
 <article class="post content" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
     {% if page.title %}<h1 class="post-title gel-trafalgar" itemprop="name headline">{{ page.title }}</h1>{% endif %}
-    {% if page.subtitle %}<p class="gel-greatPrimer">{{ page.subtitle }}</p>{% endif %}
+    {% if page.subtitle %}<p class="gel-great-primer">{{ page.subtitle }}</p>{% endif %}
     {% if page.date %}<p class="post-meta gel-brevier">Updated: <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%Y-%m-%d" }}</time></p>{% endif %}
   </header>
-  <div class="post-content gel-bodyCopy" itemprop="articleBody">
+  <div class="post-content gel-body-copy" itemprop="articleBody">
     {% if page.image %}<img src="/resources/{{ page.image }}">{% endif %}
     {{ content }}
   </div>

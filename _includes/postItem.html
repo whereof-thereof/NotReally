@@ -2,7 +2,7 @@
   <li style="background-image: {% if post.extimg %}url('{{ post.extimg }}'){% endif %}{% if post.image %}url('/resources/{{ post.image }}'){% endif %}; background-blend-mode: luminosity; background-size: cover; background-position:center;">
     <div class="postText">
       <p class="postDate gel-brevier"><span>{{ post.date | date:"%d&nbsp;%b&nbsp;%Y" }}</span></p>
-      {% if post.subtitle %}<p class="gel-longPrimer"><span>{{ post.subtitle }}</span></p>{% endif %}
+      {% if post.subtitle %}<p class="gel-long-primer"><span>{{ post.subtitle }}</span></p>{% endif %}
       <h3 class="gel-trafalgar"><span>{{ post.title }}</span></h3>
     </div>
   </li>
