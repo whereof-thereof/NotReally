@@ -33,6 +33,9 @@ font-kerning: normal;
     font-weight: 200;
     font-style: normal;
 }
+.gel-body-copy h2 {
+    display: inline-block;
+}
 
 article h2, article h3 {
     margin-top: $spacing-unit;
