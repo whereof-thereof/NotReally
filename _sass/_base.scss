@@ -27,7 +27,7 @@ font-kerning: normal;
 
 .gel-trafalgar, h1, .gel-body-copy h2, hr + p > em > strong {
     font-family: $mono-font-family;
-    display: inline-block;
+    display: inline;
     background-color: $text-colour;
     color: #FFF;
     font-weight: 200;
