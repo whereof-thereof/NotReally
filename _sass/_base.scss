@@ -33,11 +33,12 @@ font-kerning: normal;
     font-weight: 200;
     font-style: normal;
 }
-.gel-body-copy h2 {
+.gel-body-copy h2, hr + p > em > strong {
     display: inline-block;
+    padding: 0.3rem;
 }
 
-article h2, article h3 {
+.gel-body-copy h2, .gel-body-copy h3 {
     margin-top: $spacing-unit;
 }
 

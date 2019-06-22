@@ -3,7 +3,7 @@ layout: post
 title:  Words that I like
 author: Rob Safar
 subtitle: My growing dictionary
-tags: making
+tags: research
 ---
 <strong>\*\*<span class="nou">artist</span>\*\*</strong>: <span class="grey">[</span>a <span class="nou">practitioner</span><span class="grey">\]([https://en.wikipedia.org/wiki/Artist](https://en.wikipedia.org/wiki/Artist))</span> of <span class="grey">\[</span><span class="nou">activities</span> in <span class="ver">creating</span> <span class="adj">visual</span>, <span class="nou">auditory</span> <span class="con">or</span> <span class="ver">performing</span> <span class="nou">artifacts</span><span class="grey">\]([https://en.wikipedia.org/wiki/Art](https://en.wikipedia.org/wiki/Art))</span>. Someone whose <span class="nou">actions</span>, when <span class="ver">abstracted</span> <span class="adv">away</span> <span class="con">and</span> <span class="adv">together</span>, <span class="ver">are intended</span> to <span class="nou">amount</span> to <span class="ver">making</span> <em>\*<span class="nou">sense</span>\*</em>.<span class="grey">[^</span><span class="adv">Obviously</span> our <span class="adj">own</span> <span class="nou">situations</span> <span class="ver">can tend</span> us to <span class="ver">be</span> <span class="adv">more</span> <span class="con">or</span> <span class="adv">less</span> <span class="adj">generous</span> with <span class="ver">making</span> any <span class="nou">sense</span>.<span class="grey">]</span>
 

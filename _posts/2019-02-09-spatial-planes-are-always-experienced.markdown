@@ -3,7 +3,7 @@ layout: post
 title:  Spatial planes are always experienced
 author: Rob Safar
 subtitle: multidimensionally
-tags: making
+tags: research
 ---
 Mythopoetic thought leadership. 
 
@@ -37,11 +37,3 @@ When I was a child I used to stare at the sun. What stopped me.
       </g>
     </svg>
 </div>
-
-Dope town drunk. 
-
-This isn’t a website really. It’s not a portfolio. Is it a confession? An apology, maybe. It’s time and energy I’ve put into a medium that you’re now spending time and energy reading. Honestly, I’m just sorta reaching out. 
-
-Yeah I’m not selling anything right now. It’s okay to be the collaborator rather than the artist. Grow beyond binaries? 
-
-Ah, this is all just virtue signalling anyway. That’ll do, it’s okay. 
