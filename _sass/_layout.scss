@@ -29,12 +29,16 @@ main footer {
 
 // Header
 
-header a, header a:visited {
+header > a, header > a:visited {
     font-family: $mono-font-family;
     color: $text-colour;
     font-size: calc(1.2rem + 13vw);
     max-width: 100vw;
     overflow: hidden;
+}
+
+.headerSmall {
+    font-size: 2rem;
 }
 
 // Cards

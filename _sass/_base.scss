@@ -58,7 +58,7 @@ a, a:visited {
 header {
     line-height: 1;
 }
-header a {
+header > a {
     text-decoration: none;
     font-weight: $bold-font-weight;
 }

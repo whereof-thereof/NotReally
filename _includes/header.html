@@ -3,5 +3,8 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 <header>
-  <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+  <a {% if page.layout != 'home' %}class="headerSmall"{% endif %} href="{{ site.baseurl }}/">{{ site.title }}</a>
+  <div class="gel-pica">
+    <a href="/i-speaks">/I&nbsp;speaks/</a> | <a href="/research">Research</a> | <a href="/what-i-learned-from-making">What&nbsp;I&nbsp;learned&nbsp;from&nbsp;making</a>
+  </div>
 </header>

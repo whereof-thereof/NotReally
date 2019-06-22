@@ -3,6 +3,7 @@ layout: post
 title:  Spatial planes are always experienced
 author: Rob Safar
 subtitle: multidimensionally
+tags: making
 ---
 Mythopoetic thought leadership. 
 

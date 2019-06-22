@@ -4,6 +4,7 @@ title:  Lovers on a park bench
 author: Rob Safar
 subtitle: Automatic drawing
 image: "loversBench.png"
+tags: making
 ---
 Continuing to explore automatic drawing, this piece was the result of a lengthy process of trying to picture something without anything coming to mind. 
 
