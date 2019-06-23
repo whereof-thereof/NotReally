@@ -48,7 +48,7 @@ a, a:visited {
     color: $link-colour;
 }
 
-::selection {
+::selection, .highlightSelect {
     background: $select-colour; color: $background-colour;
 }
 ::-moz-selection {

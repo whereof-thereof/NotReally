@@ -3,8 +3,8 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 <header>
-  <a {% if page.layout != 'home' %}class="headerSmall"{% endif %} href="{{ site.baseurl }}/">{{ site.title }}</a>
+  <a{% if page.layout != 'home' %} class="headerSmall"{% endif %} href="{{ site.baseurl }}/">{{ site.title }}</a>
   <div class="gel-pica">
-    <a href="/i-speaks">/I&nbsp;speaks/</a> | <a href="/research">Research</a> | <a href="/what-i-learned-from-making">What&nbsp;I&nbsp;learned&nbsp;from&nbsp;making</a>
+    <a{% if page.title == '/I speaks/' %} class="highlightSelect"{% endif %} href="/i-speaks">/I&nbsp;speaks/</a> | <a {% if page.tags contains 'research' or page.title == 'Research' %}class="highlightSelect"{% endif %} href="/research">Research</a> | <a{% if page.tags contains 'making' or page.title == 'What I learned from making' %} class="highlightSelect"{% endif %} href="/what-i-learned-from-making">What&nbsp;I&nbsp;learned&nbsp;from&nbsp;making</a>
   </div>
 </header>
