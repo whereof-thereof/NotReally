@@ -35,6 +35,7 @@ font-kerning: normal;
 }
 .gel-body-copy h2, hr + p > em > strong {
     display: inline-block;
+    line-height: 2rem;
     padding: 0.3rem;
 }
 
