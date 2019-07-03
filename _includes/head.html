@@ -21,7 +21,11 @@
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  {% if page.image %}<meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="{{ site.url }}/resources/{{ page.image }}" />
+  {% else %}
   <meta name="twitter:card" content="summary" />
+  {% endif %}
   <meta name="twitter:creator" content="@robSafar" />
   <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
