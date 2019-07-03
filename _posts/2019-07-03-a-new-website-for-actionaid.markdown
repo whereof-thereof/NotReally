@@ -75,7 +75,7 @@ The geometry of this space reflects the sovereignty of being that is ingrained i
 
 ## Brand and semiotics
 
-We were making a spread of websites, templates with which a variety of people would come to use over the lifetime of the product in order to deliver a brand experience. The spaces needed to contain everything that a person might need in order to deliver on the brand. This included not just the tools to use, but also the guidance on how to use them and examples of what to aim for.
+We were making a spread of websites, templates that a variety of people would come to use over the lifetime of the product in order to deliver a brand experience. The spaces needed to contain everything that a person might need in order to deliver on the brand. This included not just the tools to use, but also the guidance on how to use them and examples of what to aim for.
 
 But crucially we couldn’t predict all of the use cases that would need to use this space. Who knows what contexts and challenges might arise in the future; and could this space continue to be productive in a year, three years or five? Would it even be used at all if it was too inflexible? We thought not. 
 
