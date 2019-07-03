@@ -45,7 +45,7 @@ So what is this space?
 - **Borders**: It’s unambiguous in its beginning and end. That doesn’t necessarily mean you have to start at a regimented 0600 sharp, but it should be evident when you are or aren’t doing your shit.
 - **Interfaces**: In a system environment, it’s entering with certain inputs and producing outputs. In a collaborative environment, it’s knowing how your shit fits in with other people’s shit, and that your shit is your own and that others’ is theirs. The interfaces can be many-to-many, but ultimately they need to be predictable. Otherwise people might understandably struggle to get on with their responsibilities and deliver to known expectations.
 
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="455" height="275" viewBox="5, -15, 455, 275">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="5, -15, 455, 275">
 <defs>
     <clipPath id="Clip_1">
         <path d="M55,-17 L402,-17 L402,258 L55,258 z M369.5,15.5 L369.5,225.5 L87.5,225.5 L87.5,15.5 L369.5,15.5 z M375.5,9.5 L81.5,9.5 L81.5,231.5 L375.5,231.5 L375.5,9.5 z"/>
@@ -89,7 +89,7 @@ What’s this space, then?
 - **Borders**: It wants to be unambiguous but it can never really be. It needs to be able to be found anywhere, even everywhere.
 - **Interfaces**: It needs to know who else is sharing the space in order to provide what they need, but only broad characterisations are necessary. Too specific an analysis could lead to over-optimisation and inflexibility.
 
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="455" height="400" viewBox="-10, -15, 455, 400">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="-10, -15, 455, 400">
 <defs>
 <radialGradient id="Gradient_1" gradientUnits="userSpaceOnUse" cx="228" cy="190.051" r="144">
   <stop offset="0.233" stop-color="#000000"/>
