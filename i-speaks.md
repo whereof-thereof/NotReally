@@ -12,18 +12,18 @@ I'm really quite deep, actually. Really deep.
 
 ## Qualifications
 
-### Philosophy and Literature (MA)
-
-I studied language, phenomenology, the classics, aesthetics, et cetera; and wrote a dissertation on irony and liberalism. 
-
-### Digital Media (MA)
-
-This was good, I was awarded a distinction. My dissertation was on gamergate, which was current at the time, and looked at the history of trolling and reactionary activism through the lens of Foucauldian discipline. There was other great stuff too, and Goldsmiths is a grand college. 
-
-### Health and Social Care (NVQ3)
-
-I spent a few years as a support worker, providing living assistance to adults with learning disabilities. 
-
 ### DSDM agile project management (practitioner)
 
 I’ve been told by a great many agile trainers that agile is the best. Way better than PRINCE2. I tend to agree.
+
+### Digital media (MA)
+
+This was good, I was awarded a distinction. My dissertation was on gamergate, which was current at the time, and looked at the history of trolling and reactionary activism through the lens of Foucauldian discipline. There was other great stuff too, and Goldsmiths is a grand college. 
+
+### Health and social care (NVQ3)
+
+I spent a few years as a support worker, providing living assistance to adults with learning disabilities. 
+
+### Philosophy and literature (MA)
+
+I studied language, phenomenology, the classics, aesthetics, et cetera; and wrote a dissertation on irony and liberalism. 
