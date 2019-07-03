@@ -114,3 +114,8 @@ hr {
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
+
+hr + p > em > strong {
+    float: left;
+    margin-right: 0.5rem;
+}
