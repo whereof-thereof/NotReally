@@ -30,4 +30,5 @@
   <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 140 }}" />
+  {% if page.image %}<meta property="og:image" content="{{ site.url }}/resources/{{ page.image }}" />{% endif %}
 </head>
