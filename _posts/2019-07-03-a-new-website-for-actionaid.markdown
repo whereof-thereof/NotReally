@@ -77,9 +77,9 @@ The geometry of this space reflects the sovereignty of being that is ingrained i
 
 We were making a spread of websites, templates that a variety of people would come to use over the lifetime of the product in order to deliver a brand experience. The spaces needed to contain everything that a person might need in order to deliver on the brand. This included not just the tools to use, but also the guidance on how to use them and examples of what to aim for.
 
-But crucially we couldn’t predict all of the use cases that would need to use this space. Who knows what contexts and challenges might arise in the future; and could this space continue to be productive in a year, three years or five? Would it even be used at all if it was too inflexible? We thought not. 
+But crucially we couldn’t predict all of the use cases that would need to participate in this space. Who knows what contexts and challenges might arise in the future; and could this space continue to be productive in a year, three years or five? Would it even be used at all if it was too inflexible? We thought not. 
 
-When learning a language, we speak mostly in sentences you’ve never heard before. A finite, random set of inputs result in a potentially infinite set of outputs. So we set about to produce a brand space that would empower people to speak the language of ActionAid.
+When learning a language, we speak mostly in sentences we've never heard before. A finite, random set of inputs result in a potentially infinite set of outputs. So we set about to produce a brand space that would empower people to speak the language of ActionAid.
 
 This space was created with a website strategy, style guide, and implemented (later formalised) design language. The strategy expressed the purpose of the website in this branded context, offering a way of making editorial and design decisions. With that as a foundation, the style guide and design language could grow in parallel and be coherent with each other.
 
@@ -126,7 +126,7 @@ On a project level, a closed path is needed to create productive space. This dis
 
 Even conceptually, the qualities of a space can have shape and with shape comes geometry.
 
-What does any of this have to do with Agent Cooper’s rock throwing? Perhaps not the rock throwing itself, but the dream that inspired his method. Within the world of Twin Peaks, there was a consequential connection between the method and the reality. In non-fictional contexts, this is essentially geometry — even abstract shapes have material properties that can give predictable results.
+What does any of this have to do with Agent Cooper’s rock throwing? Perhaps not the rock throwing itself, but the dream that inspired his method. Within the world of Twin Peaks, there was a consequential connection between the method and the reality. In non-fictional contexts, this is essentially geometry — even psychic forms have material properties that can give predictable results.
 
 The geometry of Cooper’s rock throwing resulted in an answer to his question divined. The geometry of the spaces created in our project also shaped the results that we could produce within them, though by less fantastical means.
 
