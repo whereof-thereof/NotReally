@@ -3,6 +3,6 @@ title:  John 10:10
 author: Rob Safar
 subtitle: A page from another book
 exturl: https://john-io.io/
-image: "johnioio.png"
+image: "johnioio.jpg"
 tags: making
 ---

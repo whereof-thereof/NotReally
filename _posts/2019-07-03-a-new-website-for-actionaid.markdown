@@ -3,7 +3,7 @@ layout: post
 title:  A new website for ActionAid
 author: Rob Safar
 subtitle: Space is everything
-image: "websiteActionAidInternational.png"
+image: "websiteActionAidInternational.jpg"
 tags: making
 ---
 
