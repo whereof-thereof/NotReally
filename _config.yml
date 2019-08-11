@@ -38,3 +38,7 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+picture:
+  source: "resources"
+  output: "resources/generated"
