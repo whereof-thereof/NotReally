@@ -1,32 +1,3 @@
-/**
- * GRID ALL THE THINGS
- */
-
-main {
-    display: grid;
-    grid-template-columns: auto 1fr 2fr 1fr auto;
-    grid-template-rows: 10vw auto auto auto auto;
-}
-main header {
-    grid-column: 2 / 5;
-    grid-row: 2;
-}
-main ul.cards {
-    grid-column: 2 / 5;
-    grid-row: 5;
-}
-main footer {
-    grid-column: 4 / 5;
-    grid-row: 6;
-}
-
-// Keep breakpoints to a minimum...
-@media screen and (max-width: 450px) {
-    main {
-        grid-template-columns: 0 0 0 auto auto;
-    }
-}
-
 // Header
 
 header > a, header > a:visited {
@@ -41,53 +12,84 @@ header > a, header > a:visited {
     font-size: 2rem;
 }
 
+// Footer
+
+footer.site-footer { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+}
+@media (max-width: 500px) {
+    footer.site-footer > p {
+        grid-column: 1 / span 2;
+    }
+}
+footer.site-footer > p { padding: 1rem; }
+
 // Cards
 
-ul.cards {
-    list-style: none;
-    padding-left: 0;
+ul.cards { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    list-style: none; 
+    padding: 1rem; 
+    margin-bottom: 2 * $spacing-unit;
 }
-ul.cards li {
-    display: grid;
-    grid-template-rows: 1fr auto;
-    max-width: 100%;
-    height: 45vh;
-    overflow: hidden;
-    margin: 1rem;
-    background: $grey-colour-light;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+ul.cards li > a > div { 
+    padding: 1rem; 
+    box-shadow: 0; 
     transition: all 0.3s cubic-bezier(.25,.8,.25,1); 
 }
-ul.cards li:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+ul.cards li > a > div:hover { 
+    box-shadow: 0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12); 
 }
-ul.cards li div.postText {
-    grid-row: 2;
-    padding: 1rem;
+@media (max-width: 500px) {
+    ul.cards li {
+        grid-column: 1 / span 2;
+    }
 }
-ul.cards li h3 {
-    font-size: 1.65rem;
+ul.cards li a { 
+    color: $text-colour; 
+    text-decoration: none; 
 }
-ul.cards li span {
-    background: $background-colour;
-    padding: 5px;
+ul.cards li img { 
+    filter: grayscale(65%); 
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1); 
+    width: 100%; 
+    max-height: 360px; 
+    object-fit: cover; 
+    margin-bottom: 0; 
 }
-ul.cards .postText, ul.cards .postText a, ul.cards .postText a:visited {
-    color: #fff;
-    background: linear-gradient(to bottom, transparent, $standout-colour);
+ul.cards li img:hover { 
+    filter: grayscale(0);
+}
+ul.cards li hr { 
+    background: $spice-colour; 
+    border: none; 
+    height: 6px; 
+}
+.cardImage { 
+    overflow: hidden; 
+    width: 100%; 
+}
+.cardTitle { 
+    margin-bottom: 0.5rem; 
+}
+.cardSubtitle {  }
+.cardTag { 
+    margin-top: 1rem; 
 }
 
 // Articles
 
 article, main div.container, section {
-    grid-column: 3 / 5;
-    grid-row: 3;
     max-width: 65ch;
+    margin-left: auto;
+    margin-right: auto;
     overflow: hidden;
     text-overflow: ellipsis;
     word-break: break-word;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 2 * $spacing-unit;
+    margin-bottom: 2 * $spacing-unit;
 }
 article header, section header {
     margin-bottom: 2 * $spacing-unit;
@@ -113,9 +115,4 @@ article img {
 hr {
     margin-top: 3rem;
     margin-bottom: 3rem;
-}
-
-hr + p > em > strong {
-    float: left;
-    margin-right: 0.5rem;
 }

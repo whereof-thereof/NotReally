@@ -1,5 +1,14 @@
 ---
-layout: page
+layout: default
 ---
 
-<p>Hello you. You've found my website. It's got my name on it so it's mine.</p>
+<section class="content">
+    <div class="gel-body-copy">
+        {{ content }}
+    </div>
+</section>
+<ul class="cards">
+    {% for post in site.posts limit:4 %}
+        {% include postItem.html %}
+    {% endfor %}
+</ul>

@@ -1,9 +1,13 @@
-<a href="{% if post.exturl %}{{ post.exturl }}{% else %}{{ post.url }}{% endif %}">
-  <li style="background-image: {% if post.extimg %}url('{{ post.extimg }}'){% endif %}{% if post.image %}url('/resources/{{ post.image }}'){% endif %}; background-blend-mode: luminosity; background-size: cover; background-position:center;">
-    <div class="postText">
-      <p class="postDate gel-brevier"><span>{{ post.date | date:"%d&nbsp;%b&nbsp;%Y" }}</span></p>
-      {% if post.subtitle %}<p class="gel-long-primer"><span>{{ post.subtitle }}</span></p>{% endif %}
-      <h3 class="gel-trafalgar"><span>{{ post.title }}</span></h3>
+<li>
+  <a href="{% if post.exturl %}{{ post.exturl }}{% else %}{{ post.url }}{% endif %}">
+    <div>
+      {% if post.extimg %}<div class="cardImage"><picture><img src="{{ post.extimg }}"></picture></div>
+      {% elsif post.image %}<div class="cardImage">{% picture {{ post.image }} %}</div>
+      {% else %}<hr>{% endif %}
+      <div class="cardTitle gel-trafalgar">{{ post.title }}</div>
+      {% if post.subtitle %}<div class="cardSubtitle gel-long-primer">{{ post.subtitle }}</div>{% endif %}
+      {% if post.exturl %}<div class="cardTag gel-brevier"><span class="externalLink">{{ post.exturl | remove: 'https://' | replace_first: "/", " " | truncatewords: 1 | remove: '...' }}</span></div>
+      {% elsif post.tags %}<div class="cardTag gel-brevier">{{ post.tags }}</div>{% endif %}
     </div>
-  </li>
-</a>
+  </a>
+</li>

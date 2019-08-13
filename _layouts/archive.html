@@ -8,12 +8,13 @@ layout: default
     {% if page.date %}<p class="post-meta gel-brevier">Updated: <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%Y-%m-%d" }}</time></p>{% endif %}
   </header>
   <div class="post-content gel-body-copy" itemprop="articleBody">
-    {% if page.image %}<img src="/resources/{{ page.image }}">{% endif %}
+    {% if page.image %}{% picture {{ page.image }} %}{% endif %}
     {{ content }}
   </div>
-  <ul class="cards">
-    {% for post in site.posts limit:10 %}
-        {% include postItem.html %}
-    {% endfor %}
-  </ul>
 </section>
+<ul class="cards">
+  {% for post in site.posts %}
+      {% include postItem.html %}
+  {% endfor %}
+</ul>
+
