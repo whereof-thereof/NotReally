@@ -2,7 +2,7 @@
   <a href="{% if post.exturl %}{{ post.exturl }}{% else %}{{ post.url }}{% endif %}">
     <div>
       {% if post.extimg %}<div class="cardImage"><picture><img src="{{ post.extimg }}"></picture></div>
-      {% elsif post.image %}<div class="cardImage">{% picture {{ post.image }} %}</div>
+      {% elsif post.image %}<div class="cardImage"><img src="/resources/{{ post.image }}"></div>
       {% else %}<hr>{% endif %}
       <div class="cardTitle gel-trafalgar">{{ post.title }}</div>
       {% if post.subtitle %}<div class="cardSubtitle gel-long-primer">{{ post.subtitle }}</div>{% endif %}
