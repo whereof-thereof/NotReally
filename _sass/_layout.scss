@@ -20,10 +20,13 @@ footer.site-footer {
 }
 @media (max-width: 500px) {
     footer.site-footer > p {
-        grid-column: 1 / span 2;
+        grid-column: span 2;
     }
 }
-footer.site-footer > p { padding: 1rem; }
+footer.site-footer > div {
+    grid-column: span 2;
+}
+footer.site-footer > p, footer.site-footer > div { padding: 1rem; }
 
 // Cards
 
@@ -74,7 +77,6 @@ ul.cards li hr {
 .cardTitle { 
     margin-bottom: 0.5rem; 
 }
-.cardSubtitle {  }
 .cardTag { 
     margin-top: 1rem; 
 }
