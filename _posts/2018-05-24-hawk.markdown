@@ -3,7 +3,7 @@ layout: post
 title:  Hawk
 author: Rob Safar
 subtitle: Semi-automatic drawing with oil pastels
-image: "hawk.jpg"
+image: "hawk.webp"
 tags: making
 ---
 What is there to say about this? It's a drawing technique that seems to work well with oil pastels, one which is very quick and rough and produces results that are cursorily effective if not accurate.
