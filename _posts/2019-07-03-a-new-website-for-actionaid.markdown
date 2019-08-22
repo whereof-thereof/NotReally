@@ -11,13 +11,13 @@ I’d been watching a lot of Twin Peaks and was inspired by Agent Cooper’s sur
 
 I do like to take things away from my media though, and I wondered what value could be taken from Cooper’s pious paladin persona. Or, more specifically, from his methods.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VrcetzYbxkE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="videoWrapper"><iframe src="https://www.youtube-nocookie.com/embed/VrcetzYbxkE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 While bordering on the kind of predatory mumbo jumbo that is exploited by homeopaths, mediums and scientologists (all still interesting subjects, rather than fields, of study), acknowledging that belief itself has a reciprocal material and phenomenal power shouldn’t be controversial. And with such a concession, the metaphorical floodgates open.
 
 If the world is everything that is the case, and everything in the world is the case, then it is true that everything that is believed is the case, by virtue of being in the world. And, being the case, everything that is believed has the potential for further material consequences. Assuming, of course, that there is no radical mind/body duality and that our mental experiences are located within the world and not elsewhere, indeed if they even exist at all so conceived.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/38hiqW2E88A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="videoWrapper"><iframe src="https://www.youtube-nocookie.com/embed/38hiqW2E88A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 So it was in this context that the project began. I’d also recently completed a qualification as a DSDM agile practitioner and had been working with the relevant technology and stakeholders for some years. With the business case approved, it was a certainty that we would be bringing in some help. 
 

@@ -2,6 +2,15 @@
 <html>
   {% include head.html %}
   <body>
+    {% if page.layout == 'home' %}<div class="heroVideo">
+      <header>
+        <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+      </header>
+      <!----<video id="helloThereVideo" controls>
+        <source src="/resources/IMG_0146.webm" type="video/webm">
+        <source src="/resources/IMG_0146.mp4" type="video/mp4">
+      </video>-->
+    </div>{% endif %}
     <main>
       {% include header.html %}
       {{ content }}
