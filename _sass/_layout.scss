@@ -1,9 +1,10 @@
 // Header
 
 header > a, header > a:visited {
-    font-family: $mono-font-family;
+    //font-family: $mono-font-family;
     color: $text-colour;
     font-size: calc(1.2rem + 13vw);
+    font-weight: 900;
     max-width: 100vw;
 
 }
@@ -19,11 +20,11 @@ header > a, header > a:visited {
 }
 .heroVideo header {
     padding-top: 50vh;
-    -webkit-animation: fadein 8s;
-    -moz-animation: fadein 8s;
-    -ms-animation: fadein 8s;
-    -o-animation: fadein 8s;
-    animation: fadein 8s;
+    -webkit-animation: fadein 4s;
+    -moz-animation: fadein 4s;
+    -ms-animation: fadein 4s;
+    -o-animation: fadein 4s;
+    animation: fadein 4s;
 }
 @keyframes fadein {
     0% { opacity: 0; }
@@ -96,7 +97,7 @@ ul.cards li img {
     width: 100%; 
     max-height: 360px; 
     object-fit: cover; 
-    margin-bottom: 0; 
+    margin-bottom: 1rem; 
 }
 ul.cards li img:hover { 
     filter: grayscale(0);

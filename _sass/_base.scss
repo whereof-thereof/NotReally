@@ -13,8 +13,15 @@ main {
 /**
   * Typography
   */
+
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+html { font-family: 'Inter var', sans-serif; }
+}
+
 html {
-    font-family: $base-font-family;
+    //font-family: $base-font-family;
     color: $text-colour;
     font-size: $base-font-size;
     font-weight: $base-font-weight;
@@ -26,19 +33,26 @@ html {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+    font-feature-settings: 'liga' 1;
 }
 
-h1, .gel-brevier {
+h1, .gel-trafalgar {
+    font-weight: 700;
+}
+.gel-brevier {
     font-family: $mono-font-family;
+}
+.gel-great-primer {
+    font-weight: 400;
 }
 .gel-minion {
     text-transform: uppercase;
 }
 
-.post h1, .post h2 { font-weight: 300; }
-.post h2 { margin-top: $spacing-unit; }
+//.post h1, .post h2 { font-weight: 300; }
+.post h2 { font-size: 2rem; margin-top: $spacing-unit; }
 .post h3, .post h4 { 
-    font-weight: 400; 
+    font-weight: 500; 
     margin-top: $spacing-unit;
 }
 
@@ -85,20 +99,16 @@ ul {
     list-style: none; 
 }
 ul:not(.cards) li::before {
-    content: "\25cb";  
-    color: $spice-colour; 
-    font-weight: bold; 
+    content: "\1F449";  
     display: inline-block; 
     width: 1em; 
-    margin-left: -1em; 
+    margin-left: -1.5em; 
+    margin-right: 0.5em;
 }
 
 // Code
 code, pre {
     font-family: $mono-font-family;
-}
-code {
-    color: $raw-colour;
 }
 
 // Video iframes fluid width
