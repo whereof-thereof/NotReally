@@ -4,7 +4,7 @@
   <!-- End Google Tag Manager (noscript) -->
 <header>
     {% if page.layout != 'home' %}<a class="headerSmall" href="{{ site.baseurl }}/">{{ site.title }}</a>{% endif %}
-  <div class="gel-pica">
+  <div class="headerNavigation gel-pica">
     <a{% if page.title == '/I speaks/' %} class="highlightSelect"{% endif %} href="/i-speaks">/I&nbsp;speaks/</a> | <a {% if page.tags contains 'research' or page.title == 'Research' %}class="highlightSelect"{% endif %} href="/research">Research</a> | <a{% if page.tags contains 'making' or page.title == 'What I learned from making' %} class="highlightSelect"{% endif %} href="/what-i-learned-from-making">What&nbsp;I&nbsp;learned&nbsp;from&nbsp;making</a>
   </div>
 </header>

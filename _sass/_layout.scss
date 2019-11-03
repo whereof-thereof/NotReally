@@ -47,6 +47,11 @@ header > a, header > a:visited {
 
 .headerSmall {
     font-size: 2rem;
+    font-weight: 200;
+}
+
+.headerNavigation {
+    margin-top: 1rem;
 }
 
 // Footer
@@ -106,6 +111,8 @@ ul.cards li hr {
     background: $select-colour; 
     border: none; 
     height: 6px; 
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 .cardImage { 
     overflow: hidden; 

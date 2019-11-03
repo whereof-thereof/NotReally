@@ -3,11 +3,12 @@
     <div>
       {% if post.extimg %}<div class="cardImage"><picture><img src="{{ post.extimg }}"></picture></div>
       {% elsif post.image %}<div class="cardImage"><img src="/resources/{{ post.image }}"></div>
-      {% else %}<hr>{% endif %}
+      {% endif %}
       <div class="cardTitle gel-trafalgar">{{ post.title }}</div>
       {% if post.subtitle %}<div class="cardSubtitle gel-long-primer">{{ post.subtitle }}</div>{% endif %}
       {% if post.exturl %}<div class="cardTag gel-brevier"><span class="externalLink">{{ post.exturl | remove: 'https://' | replace_first: "/", " " | truncatewords: 1 | remove: '...' }}</span></div>
       {% elsif post.tags %}<div class="cardTag gel-brevier">{{ post.tags }}</div>{% endif %}
+      <hr>
     </div>
   </a>
 </li>
