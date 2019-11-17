@@ -145,4 +145,4 @@ Relevant things I haven’t read fully but you totally should:
 - A Thousand Plateaus: Capitalism and Schizophrenia, by Gilles Deleuze and Félix Guattari.
 - The Psychic Life of Power, by Judith Butler.
 
-Also check out [Agile Collective’s write up of the project](https://agile.coop/our-work/action-aid-international/). They’re a great bunch, I like them. 
+Also check out the project write-ups by [Contentious](https://contentious.ltd/project/actionaid-international/) and [Agile Collective](https://agile.coop/our-work/action-aid-international/). They’re all great people to work with. 
