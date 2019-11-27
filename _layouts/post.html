@@ -9,6 +9,8 @@ layout: default
   </header>
   <div class="post-content gel-body-copy" itemprop="articleBody">
     {% if page.image %}<img src="/resources/{{ page.image }}">{% endif %}
+    {% if page.downloadurl %}<a class="downloadLink" href="/resources/{{ page.downloadurl }}">{% if page.downloadtext %}{{ page.downloadtext }}{% else %}Download{% endif %}</a>{% endif %}
     {{ content }}
+    {% if page.downloadurl %}<a class="downloadLink" href="/resources/{{ page.downloadurl }}">{% if page.downloadtext2 %}{{ page.downloadtext2 }}{% else %}{% if page.downloadtext %}{{ page.downloadtext }}{% else %}Download{% endif %}{% endif %}</a>{% endif %}
   </div>
 </article>

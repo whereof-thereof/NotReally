@@ -4,7 +4,7 @@ layout: default
 {% include tagListing.html %}
 <ul class="cards">
   {% for post in site.posts %}
-      {% if post.tags contains "making" %}
+      {% if post.tags contains "reports" %}
           {% include postItem.html %}
       {% endif %}
   {% endfor %}
