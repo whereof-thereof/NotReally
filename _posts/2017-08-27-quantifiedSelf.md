@@ -3,7 +3,7 @@ layout: post
 title: "The quantifiedSelf (1)"
 author: Rob Safar
 subtitle: "Measuring and analysing personal consumption"
-tags: making
+tags: research
 ---
 
 - [iOS Workflow template](https://workflow.is/workflows/3f6cb0a1052d4bdd88e9bb151f82f4c4) (data capture)
