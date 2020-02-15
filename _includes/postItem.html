@@ -1,7 +1,7 @@
 <li>
   <a href="{% if post.exturl %}{{ post.exturl }}{% else %}{{ post.url }}{% endif %}">
     <div>
-      {% if post.extimg %}<div class="cardImage"><picture><img src="{{ post.extimg }}"></picture></div>
+      {% if post.extimg %}<div class="cardImage"><picture><img src="{{ post.extimg }}" loading="lazy"></picture></div>
       {% elsif post.image %}<div class="cardImage"><img src="/resources/{{ post.image }}"></div>
       {% endif %}
       <div class="cardTitle gel-trafalgar">{{ post.title }}</div>
