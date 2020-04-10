@@ -14,14 +14,8 @@ main {
   * Typography
   */
 
-@import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
-@supports (font-variation-settings: normal) {
-html { font-family: 'Inter var', sans-serif; }
-}
-
 html {
-    //font-family: $base-font-family;
+    font-family: $base-font-family;
     color: $text-colour;
     font-size: $base-font-size;
     font-weight: $base-font-weight;
