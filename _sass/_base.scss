@@ -14,25 +14,19 @@ main {
   * Typography
   */
 
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
 html {
-    font-family: $base-font-family;
+    //font-family: $base-font-family;
     color: $text-colour;
     font-size: $base-font-size;
     font-weight: $base-font-weight;
     line-height: $base-line-height;
-
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-feature-settings: "kern" 1;
-    -moz-font-feature-settings: "kern" 1;
-    -o-font-feature-settings: "kern" 1;
-    font-feature-settings: "kern" 1;
-    font-kerning: normal;
-    font-feature-settings: 'liga' 1;
-    font-feature-settings: 'tnum' 1;
-    font-feature-settings: 'case' 1;
-    font-feature-settings: 'ss01' 1;
-    font-feature-settings: 'ss02' 1;
-    font-feature-settings: 'zero' 0;
+    font-feature-settings: "ss01" 1, "calt" 1, "case" 1;
 }
 
 h1, .gel-trafalgar {
@@ -127,12 +121,12 @@ code, pre {
 
 // External link icon (à la Wikipedia)
 p > a.externalLink::after, span.externalLink::after {
-    content: "↗";
+    content: "↪";
 }
 
 // Download link icon
 a.downloadLink::before {
-    content: "⬇";
+    content: "↓";
 }
 
 // SVG animations
