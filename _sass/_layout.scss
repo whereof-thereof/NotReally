@@ -91,10 +91,10 @@ header > a, header > a:visited {
     }
     &:hover {
         &:before {
-            animation: glitch .3s cubic-bezier(.25, .46, .45, .94) both 5
+            animation: glitch .3s cubic-bezier(.25, .46, .45, .94) both 1
         }
         &:after {
-            animation: glitch .3s cubic-bezier(.25, .46, .45, .94) reverse both 5
+            animation: glitch .3s cubic-bezier(.25, .46, .45, .94) reverse both 1
         }
     }
 }
