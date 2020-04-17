@@ -26,7 +26,7 @@ html {
     font-size: $base-font-size;
     font-weight: $base-font-weight;
     line-height: $base-line-height;
-    font-feature-settings: "ss01" 1, "calt" 1, "case" 1;
+    font-feature-settings: "salt" 1, "calt" 1, "case" 1;
 }
 
 h1, .gel-trafalgar {
@@ -69,6 +69,10 @@ header {
 header > a {
     text-decoration: none;
     font-weight: $bold-font-weight;
+}
+div.headerSmall a, div.headerSmall a:visited {
+    text-decoration: none;
+    color: $text-colour;
 }
 
 // Lists

@@ -44,13 +44,88 @@ header > a, header > a:visited {
 .heroVideo header > a, .heroVideo header > a:visited {
     color: #fff;
 }
-
-.headerSmall {
-    font-size: 2rem;
-    font-weight: 200;
+// Credit to https://codepen.io/kkhenriquez/pen/PGvmjm
+.glitch {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    &:before, &:after {
+        display: block;
+        content: attr(data-glitch);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: .8;
+    } &:after {
+        color: #f0f;
+        z-index: -2;
+        animation: glitch .3s cubic-bezier(.25, .46, .45, .94) reverse both 20
+    } &:before {
+        color: #0ff;
+        z-index: -1;
+        animation: glitch .3s cubic-bezier(.25, .46, .45, .94) both 20
+    }
+}
+.glitchSmall {
+    position: absolute;
+    margin: 0;
+    &:before, &:after {
+        display: block;
+        content: attr(data-glitch);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: .8;
+    } &:after {
+        color: #f0f;
+        z-index: -2;
+    } &:before {
+        color: #0ff;
+        z-index: -1;
+    }
+    &:hover {
+        &:before {
+            animation: glitch .3s cubic-bezier(.25, .46, .45, .94) both 5
+        }
+        &:after {
+            animation: glitch .3s cubic-bezier(.25, .46, .45, .94) reverse both 5
+        }
+    }
+}
+@keyframes glitch {
+    0% {
+        transform: translate(0)
+    }
+    20% {
+        transform: translate(-5px, 5px)
+    }
+    40% {
+        transform: translate(-5px, -5px)
+    }
+    60% {
+        transform: translate(5px, 5px)
+    }
+    80% {
+        transform: translate(5px, -5px)
+    }
+    to {
+        transform: translate(0)
+    }
 }
 
-.headerNavigation {
+div.headerSmall {
+    font-size: 2rem;
+    font-weight: 200;
+    height: 2rem;
+}
+
+div.headerNavigation {
     margin-top: 1rem;
 }
 
