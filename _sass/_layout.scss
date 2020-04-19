@@ -89,7 +89,7 @@ header > a, header > a:visited {
         color: #0ff;
         z-index: -1;
     }
-    &:hover {
+    &:hover, &:active, &:focus {
         &:before {
             animation: glitch .3s cubic-bezier(.25, .46, .45, .94) both 1
         }
