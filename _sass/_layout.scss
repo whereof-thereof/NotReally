@@ -85,9 +85,11 @@ header > a, header > a:visited {
     } &:after {
         color: #f0f;
         z-index: -2;
+        animation: glitch .3s cubic-bezier(.25, .46, .45, .94) reverse both 1
     } &:before {
         color: #0ff;
         z-index: -1;
+        animation: glitch .3s cubic-bezier(.25, .46, .45, .94) both 1
     }
     &:hover, &:active, &:focus {
         &:before {
