@@ -154,3 +154,30 @@ a.downloadLink::before {
 .blendMultiply {
     mix-blend-mode: multiply;
 }
+
+// Dark mode
+
+@media (prefers-color-scheme: dark) {
+    body { 
+        background-color: $grey-d; 
+    }
+    html {
+        color: #fff;
+    }
+    a, a:visited {
+        color: $blue-l;
+    }
+    ::selection, .highlightSelect, a.highlightSelect:visited {
+        background: $yellow-l; color: $grey-d;
+    }
+    ::-moz-selection {
+        background: $yellow-l; color: $grey-d;
+    }
+    div.headerSmall a, div.headerSmall a:visited {
+        color: #fff;
+    }
+    ol li::before {
+        color: $red-l; 
+    }
+    svg.illustration { background-color: #fff; }
+}

@@ -6,7 +6,6 @@ header > a, header > a:visited {
     font-size: calc(1.2rem + 13vw);
     font-weight: 900;
     max-width: 100vw;
-
 }
 
 .heroVideo {
@@ -164,6 +163,9 @@ ul.cards li > a > div {
 ul.cards li > a > div:hover { 
     box-shadow: 0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12); 
 }
+@media (prefers-color-scheme: dark) {
+    ul.cards li > a > div:hover { background-color: $grey;}
+}
 @media (max-width: 500px) {
     ul.cards li {
         grid-column: 1 / span 2;
@@ -172,6 +174,9 @@ ul.cards li > a > div:hover {
 ul.cards li a { 
     color: $text-colour; 
     text-decoration: none; 
+}
+@media (prefers-color-scheme: dark) {
+    ul.cards li a { color: #fff;}
 }
 ul.cards li img { 
     filter: grayscale(45%); 

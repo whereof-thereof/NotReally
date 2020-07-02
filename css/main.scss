@@ -50,6 +50,15 @@ $select-colour:     $yellow-l;
 $spice-colour:      $red-d;
 $raw-colour:        $green-d;
 
+@media screen and (prefers-color-scheme: dark) {
+    $background-colour: #262936;
+    $text-colour:       #fff;
+    $link-colour:       #a9d6da;
+    $select-colour:     #f9cd15;
+    $spice-colour:      #f16c56;
+    $raw-colour:        #c9dc5d;
+}
+
 
 
 // Use media queries like this:
